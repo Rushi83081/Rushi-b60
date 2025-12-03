@@ -178,7 +178,12 @@ Update:
 
 ami
 instance_type (ex: t2.micro, t3.medium)
-📌 5. Deploy Infrastructure
+
+## 📌 Step 1 — Deploy Infrastructure with Terraform
+
+Run the following commands:
+
+```bash
 terraform init
 terraform validate
 terraform plan
@@ -186,137 +191,154 @@ terraform apply --auto-approve
 This creates:
 
 Jenkins EC2 Server
+
 Security Groups
-Required networking
-📌 6. Login to Jenkins Server
-Get EC2 Public IP → open browser:
 
+Required networking (VPC, Subnet, etc.)
+
+📌 Step 2 — Login to Jenkins
+Get EC2 Public IP and open in browser:
+
+cpp
+Copy code
 http://<PUBLIC-IP>:8080
-Get Jenkins admin password:
+Retrieve Jenkins admin password:
 
+bash
+Copy code
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-Paste into browser → login.
+Paste password in browser → login.
 
-📌 7. Install Required Jenkins Plugins
-Install:
+📌 Step 3 — Install Required Jenkins Plugins
+Install the following plugins via Manage Jenkins → Plugins:
 
 Eclipse Temurin Installer
-SonarQube Scanner
-NodeJS Plugin
-OWASP Dependency Check
-Prometheus Metrics
-Docker (ALL options + CloudBees)
-Stage View
-📌 8. Configure Credentials in Jenkins
-Sonar Token
-Open Sonar:
 
-http://<instance-ip>:9000
-Go to: Administration → Security → Tokens
-Generate token: sonar-token
+SonarQube Scanner
+
+NodeJS Plugin
+
+OWASP Dependency Check
+
+Prometheus Metrics
+
+Docker (ALL options + CloudBees)
+
+Stage View
+
+📌 Step 4 — Configure Credentials in Jenkins
+4.1 SonarQube Token
+Open SonarQube:
+
+cpp
+Copy code
+http://<INSTANCE-IP>:9000
+Go to Administration → Security → Tokens → Generate token sonar-token
 
 Add in Jenkins:
 
-Manage Jenkins → Credentials
-Add Secret Text
+vbnet
+Copy code
+Manage Jenkins → Credentials → Add Secret Text
 ID: sonar-token
-Docker Hub Credentials
-Add:
+4.2 Docker Hub Credentials
+Add Docker Hub Username & Password in Jenkins credentials:
 
-Username
-Password
+makefile
+Copy code
 ID: docker
-📌 9. Configure Tools (Manage Jenkins → Tools)
-JDK
-Name: jdk17
-Install from adoptium
-Version: 17
-NodeJS
-Name: node16
-Version: 16.2.0
-Sonar Scanner
-Default settings
-Docker
-Install via Jenkins installer
-📌 10. SonarQube Integration in Jenkins
-Manage Jenkins → System
-Add:
+📌 Step 5 — Configure Tools in Jenkins
+Go to Manage Jenkins → Global Tool Configuration:
 
-SonarQube Server
+Tool	Name	Version / Settings
+JDK	jdk17	Install from Eclipse Temurin, v17
+NodeJS	node16	Version 16.2.0
+SonarQube	default	Default settings
+Docker	docker	Install via Jenkins installer
+
+📌 Step 6 — SonarQube Integration
+Manage Jenkins → System → Configure SonarQube servers
+
+Add server and link credentials:
+
+yaml
+Copy code
 Token ID: sonar-token
-
-11. Jenkins Pipeline Script
+📌 Step 7 — Jenkins Pipeline Script
 Replace <YOUR-DOCKER-USERNAME> with your Docker Hub username.
 
-pipeline{
+groovy
+Copy code
+pipeline {
     agent any
-    tools{
+    tools {
         jdk 'jdk17'
         nodejs 'node16'
     }
     environment {
-        SCANNER_HOME=tool 'sonar-scanner'
+        SCANNER_HOME = tool 'sonar-scanner'
     }
     stages {
-        stage('clean workspace'){
-            steps{
+        stage('Clean Workspace') {
+            steps {
                 cleanWs()
             }
         }
-        stage('Checkout from Git'){
-            steps{
+        stage('Checkout from Git') {
+            steps {
                 git branch: 'main', url: 'https://github.com/abhipraydhoble/Project-Amazon-Clone.git'
             }
         }
-        stage("Sonarqube Analysis "){
-            steps{
+        stage('SonarQube Analysis') {
+            steps {
                 withSonarQubeEnv('sonar-server') {
-                    sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Amazon \
-                    -Dsonar.projectKey=Amazon '''
+                    sh '''$SCANNER_HOME/bin/sonar-scanner \
+                    -Dsonar.projectName=Amazon \
+                    -Dsonar.projectKey=Amazon'''
                 }
             }
         }
-        stage("quality gate"){
-           steps {
+        stage('Quality Gate') {
+            steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'jenkins' 
+                    waitForQualityGate abortPipeline: false, credentialsId: 'jenkins'
                 }
-            } 
+            }
         }
         stage('Install Dependencies') {
             steps {
                 sh "npm install"
             }
         }
-        stage('OWASP FS SCAN') {
+        stage('OWASP FS Scan') {
             steps {
                 dependencyCheck additionalArguments: '--scan ./ --disableYarnAudit --disableNodeAudit', odcInstallation: 'DP-Check'
                 dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
             }
         }
-        stage('TRIVY FS SCAN') {
+        stage('TRIVY FS Scan') {
             steps {
                 sh "trivy fs . > trivyfs.txt"
             }
         }
-        stage("Docker Build & Push"){
-            steps{
-                script{
-                   withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
-                       sh "docker build -t amazon-clone ."
-                       sh "docker tag amazon-clone <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
-                       sh "docker push <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
+        stage('Docker Build & Push') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                        sh "docker build -t amazon-clone ."
+                        sh "docker tag amazon-clone <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
+                        sh "docker push <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
                     }
                 }
             }
         }
-        stage("TRIVY"){
-            steps{
+        stage('TRIVY Image Scan') {
+            steps {
                 sh "trivy image <YOUR-DOCKER-USERNAME>/amazon-clone:latest > trivyimage.txt"
             }
         }
-        stage('Deploy to container'){
-            steps{
+        stage('Deploy to Container') {
+            steps {
                 sh 'docker run -d --name amazon-clone -p 3000:3000 <YOUR-DOCKER-USERNAME>/amazon-clone:latest'
             }
         }
