@@ -172,12 +172,12 @@ cd Project-Amazon-Clone/JENKINS-TF
 provider.tf
 Set your AWS region:
 
-region = "ap-south-1"
+region = "eu-north-1"
 main.tf
 Update:
 
 ami
-instance_type (ex: t2.micro, t3.medium)
+instance_type (t3.medium)
 
 ## 📌 Step 1 — Deploy Infrastructure with Terraform
 
@@ -265,7 +265,7 @@ yaml
 Copy code
 Token ID: sonar-token
 📌 Step 7 — Jenkins Pipeline Script
-Replace <YOUR-DOCKER-USERNAME> with your Docker Hub username.
+Replace 'rushi83081' with your Docker Hub username.
 
 groovy
 Copy code
@@ -326,20 +326,20 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
                         sh "docker build -t amazon-clone ."
-                        sh "docker tag amazon-clone <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
-                        sh "docker push <YOUR-DOCKER-USERNAME>/amazon-clone:latest"
+                        sh "docker tag amazon-clone rushi83081/amazon-clone:latest"
+                        sh "docker push rushi83081/amazon-clone:latest"
                     }
                 }
             }
         }
         stage('TRIVY Image Scan') {
             steps {
-                sh "trivy image <YOUR-DOCKER-USERNAME>/amazon-clone:latest > trivyimage.txt"
+                sh "trivy image rushi83081/amazon-clone:latest > trivyimage.txt"
             }
         }
         stage('Deploy to Container') {
             steps {
-                sh 'docker run -d --name amazon-clone -p 3000:3000 <YOUR-DOCKER-USERNAME>/amazon-clone:latest'
+                sh 'docker run -d --name amazon-clone -p 3000:3000 rushi83081/amazon-clone:latest'
             }
         }
     }
