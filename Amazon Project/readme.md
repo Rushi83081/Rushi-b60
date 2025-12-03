@@ -82,3 +82,56 @@ provider "aws" {
 }
 
 ```
+
+
+
+Step 1 — Clone the Repository
+
+Open your terminal or Codespace:
+
+# Clone the repo
+git clone https://github.com/abhipraydhoble/Project-Amazon-Clone.git
+
+# Go into the project folder
+cd Project-Amazon-Clone
+
+Step 2 — Install Dependencies
+
+Check the project folder for package.json (Node.js project). Then run:
+
+npm install
+
+
+This installs all required packages for the project.
+
+Step 3 — Run the Project Locally
+# Start the project
+npm start
+
+
+Open your browser at http://localhost:3000 (or the port shown in terminal).
+
+You should see the Amazon Clone UI.
+
+Step 4 — Test the App
+
+Browse products, add to cart, check out (if backend is connected).
+
+Make sure everything works as expected.
+
+Step 5 — Push to Your Repository
+# Initialize git if this is a new repo
+git init
+
+# Add all files
+git add .
+
+# Commit changes
+git commit -m "Add Amazon Clone project with setup instructions"
+
+# Add your repository as remote
+git remote add origin <YOUR_REPO_URL>
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
