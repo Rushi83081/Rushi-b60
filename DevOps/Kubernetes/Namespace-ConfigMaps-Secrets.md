@@ -231,5 +231,3 @@ All three are essential for real-world Kubernetes deployments.
 
 ---
 
-Need next topics?  
-I can generate **Deployments, Services, Pods, StatefulSets, Volumes** as `.md` files too!
