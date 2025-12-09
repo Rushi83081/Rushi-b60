@@ -11,9 +11,9 @@ It is just a folder inside Kubernetes cluster.
 
 Example:
 
-dev (for developers)
-test (for testing)
-prod (for production)
+* dev (for developers)
+* test (for testing)
+* prod (for production)
 
 ## ✔ Why Use Namespaces?
 - Environment separation (dev / test / prod)
