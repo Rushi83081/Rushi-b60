@@ -7,14 +7,12 @@
 Namespaces are used to **logically isolate** resources inside a Kubernetes cluster.
 It is just a folder inside Kubernetes cluster.
 
-We use namespaces to keep things separate and organized.
+* We use namespaces to keep things separate and organized.
 
 Example:
 
 dev (for developers)
-
 test (for testing)
-
 prod (for production)
 
 ## ✔ Why Use Namespaces?
