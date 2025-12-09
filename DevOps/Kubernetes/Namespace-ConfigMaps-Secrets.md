@@ -5,6 +5,17 @@
 # 🚀 1. Kubernetes Namespaces
 
 Namespaces are used to **logically isolate** resources inside a Kubernetes cluster.
+It is just a folder inside Kubernetes cluster.
+
+We use namespaces to keep things separate and organized.
+
+Example:
+
+dev (for developers)
+
+test (for testing)
+
+prod (for production)
 
 ## ✔ Why Use Namespaces?
 - Environment separation (dev / test / prod)
@@ -72,11 +83,6 @@ ConfigMap is used to store **non-confidential data** in key-value format.
 ---
 
 ## 📘 ConfigMap Commands
-
-### ➤ Create ConfigMap (Literal)
-```bash
-kubectl create configmap app-config --from-literal=key1=value1 --from-literal=key2=value2
-```
 
 ### ➤ Create ConfigMap (File)
 ```bash
