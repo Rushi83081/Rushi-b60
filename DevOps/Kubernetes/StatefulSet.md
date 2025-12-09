@@ -23,7 +23,7 @@ Unlike Deployments, Pods in a StatefulSet have ordered, unique names and can kee
 - Any workload where Pod identity and ordering matter for replication or failover.[web:32][web:38]
 
 ## StatefulSet.yaml
-
+```
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -52,7 +52,7 @@ accessModes: ["ReadWriteOnce"]
 resources:
 requests:
 storage: 1Gi
-
+```
 
 ### 🧾 Useful StatefulSet Commands
 
@@ -100,10 +100,8 @@ It is typically used for cluster-wide agents such as logging, monitoring, or sto
 - Monitoring agents (Prometheus node exporter, Datadog agent) on all nodes.[web:36][web:39]  
 - Network plugins or storage daemons that must run node-wide.[web:36]
 
-### 📄 Example: Minimal DaemonSet YAML (Conceptual)
-
-deamonSet.yaml
-
+## deamonSet.yaml
+```
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
@@ -124,25 +122,22 @@ resources:
 limits:
 cpu: "100m"
 memory: "128Mi"
-
+```
 ### 🧾 Useful DaemonSet Commands
 
 Create from manifest
+```
 kubectl apply -f daemonset.yaml
-
+```
 List DaemonSets
+```
 kubectl get daemonsets
 kubectl get ds
-
-Describe a specific DaemonSet
-kubectl describe daemonset node-logger
-
-See Pods belonging to the DaemonSet
-kubectl get pods -l app=node-logger -o wide
-
+```
 Delete a DaemonSet
+```
 kubectl delete daemonset node-logger
-
+```
 ---
 
 ## 🚦 Canary Deployment
@@ -166,14 +161,8 @@ It gradually shifts a small portion of traffic to a new version, observes its be
 4. Gradually increase the percentage of traffic to v2 (e.g., 5% → 20% → 50% → 100%).[web:37][web:40]  
 5. Monitor metrics (latency, error rate, CPU) and **either complete rollout or roll back**.[web:40]
 
-### 📄 Example: Simple Canary via Two Deployments
-
-Conceptually, you might have:
-
-- `my-app-stable` Deployment (v1 image, more replicas).  
-- `my-app-canary` Deployment (v2 image, fewer replicas).  
-- A Service that selects both, so traffic is roughly proportional to replica count.
-
+## canary.yaml
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -203,17 +192,22 @@ selector:
 app: my-app
 ports:
 - port: 80
-- 
-targetPort: 80Check Deployments and Pods
+- targetPort: 80
+```
+Check Deployments and Pods
+```
 kubectl get deploy
 kubectl get pods -l app=my-app -o wide
-
+```
 Update image for the canary (e.g., new version)
 kubectl set image deployment/my-app-canary app=my-app:v2.1
 
 Scale canary up/down to change traffic share (if using replica-based weighting)
+```
 kubectl scale deployment my-app-canary --replicas=4
 kubectl scale deployment my-app-stable --replicas=6
-
+```
 Roll back canary easily by scaling it down to zero or updating image
+```
 kubectl scale deployment my-app-canary --replicas=0
+```
