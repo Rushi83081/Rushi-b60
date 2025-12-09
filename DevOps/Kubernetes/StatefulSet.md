@@ -22,11 +22,7 @@ Unlike Deployments, Pods in a StatefulSet have ordered, unique names and can kee
 - Distributed systems that need stable identities and storage (e.g., ZooKeeper, Kafka, RabbitMQ).[web:34][web:38]  
 - Any workload where Pod identity and ordering matter for replication or failover.[web:32][web:38]
 
-### 📄 Example: Minimal StatefulSet YAML (Conceptual)
-
-> Note: This is a simplified, conceptual example; adapt for your cluster and storage class.
-
-StatefulSet.yaml
+## StatefulSet.yaml
 
 apiVersion: apps/v1
 kind: StatefulSet
@@ -61,24 +57,30 @@ storage: 1Gi
 ### 🧾 Useful StatefulSet Commands
 
 Create from manifest
+```
 kubectl apply -f statefulset.yaml
-
+```
 List StatefulSets
+```
 kubectl get statefulsets
 kubectl get sts
-
+```
 Describe a specific StatefulSet
+```
 kubectl describe statefulset web
-
+```
 List Pods created by the StatefulSet
+```
 kubectl get pods -l app=web
-
+```
 Scale a StatefulSet
+```
 kubectl scale statefulset web --replicas=5
-
+```
 Delete a StatefulSet but keep persistent volumes (PVCs)
+```
 kubectl delete statefulset web
-
+```
 ---
 
 ## 🛰️ DaemonSet
