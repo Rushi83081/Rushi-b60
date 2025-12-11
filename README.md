@@ -1,9 +1,16 @@
-1️⃣ SHORT INTRODUCTION (40–60 seconds)
+1️⃣ Short Version (40–60 Seconds)
 
-(Use this when time is less)
+Hello, my name is Rushikesh Gaikwad. I completed my BCA from Bharati Vidyapeeth, Sangli, and I am currently pursuing a DevOps course at CloudBlitz, Pune. During my training, I worked on multiple hands-on projects such as 3-Tier Architecture, Netflix Clone, Myntra Clone, Amazon Clone, Super Mario Deployment, and an Angular Application on Kubernetes.
 
-Good morning/afternoon sir/ma’am. My name is Rushikesh Gaikwad. I completed my BCA from Bharati Vidyapeeth, Sangli, and I am currently pursuing a DevOps course at CloudBlitz, Pune. During the training, I worked on projects like 3-Tier Architecture, Netflix Clone, Myntra Clone, Amazon Clone, Super Mario Deployment, and Angular App on Kubernetes.
+🖥️ Linux Skills
 
-In Linux, I learned file and directory management, Vim editor, user and permission management, process monitoring, networking commands, and package installation.
-In AWS, I worked with EC2, VPC, EBS/EFS, S3, CloudWatch, Route53, CloudFront, Lambda, RDS, and IAM.
-In DevOps, I practiced Git for version control, Docker for containerization, Kubernetes for orchestration, Terraform for IaC, Jenkins for CI/CD, and tools like Datadog and Grafana for monitoring.
+I learned file and directory management, the Vim editor, user and permission management, process monitoring, networking commands, and package installation.
+
+☁️ AWS Skills
+
+I worked with major AWS services including EC2, VPC, EBS/EFS, S3, CloudWatch, Route 53, CloudFront, Lambda, RDS, and IAM.
+
+⚙️ DevOps Skills
+
+I practiced Git for version control, Docker for containerization, Kubernetes for orchestration, Terraform for Infrastructure as Code, and Jenkins for CI/CD automation.
+I also used monitoring tools like Datadog and Grafana for performance visualization.
