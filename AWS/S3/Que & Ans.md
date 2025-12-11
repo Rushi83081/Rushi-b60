@@ -1,7 +1,5 @@
 # 📘 **AWS S3 Important Questions & Answers**
 
-Below are attractive, bold, easy-to-read interview-style S3 questions with symbols.
-
 ---
 
 ## ❓ **1. What is Amazon S3?**
