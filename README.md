@@ -17,4 +17,4 @@ I also used monitoring tools like Datadog and Grafana for performance visualizat
 
 # 🌟 Medium Version 
 
-Hello, my name is Rushikesh Gaikwad, and I have completed my BCA from Bharati Vidyapeeth, Sangli. I am currently pursuing a DevOps course at CloudBlitz, Pune, where I worked on projects such as * 3-Tier Architecture Deployment *, Netflix Clone, Myntra Clone, Amazon Clone, Super Mario Deployment, and deploying an Angular application on Kubernetes. These projects helped me understand how modern applications are built, deployed, automated, and monitored in production environments.
+Hello, my name is Rushikesh Gaikwad, and I have completed my BCA from Bharati Vidyapeeth, Sangli. I am currently pursuing a DevOps course at CloudBlitz, Pune, where I worked on projects such as **3-Tier Architecture Deployment**, Netflix Clone, Myntra Clone, Amazon Clone, Super Mario Deployment, and deploying an Angular application on Kubernetes. These projects helped me understand how modern applications are built, deployed, automated, and monitored in production environments.
