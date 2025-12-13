@@ -1,6 +1,6 @@
-# 🌐 Terraform Workspace Guide
+# 🌐 Terraform Workspace 
 
-Manage multiple environments (dev, test, prod) using **Terraform Workspaces**. This guide is structured, clean, and ready to upload to your GitHub repository.
+Manage multiple environments (dev, test, prod) using **Terraform Workspaces**. 
 
 ---
 
