@@ -1,16 +1,16 @@
-🧩 Overview
+# 🧩 Overview
 
-Docker is a platform that enables developers to build, package, and run applications in containers — lightweight, portable environments that include everything needed for an app to run.
+**Docker** is a platform that enables developers to build, package, and run applications in containers — lightweight, portable environments that include everything needed for an app to run.
 
-⚙️ Why Docker?
+# ⚙️ Why Docker?
 
-🚀 Lightweight: Uses fewer resources than VMs.
-🔁 Consistency: Works across any environment — “It works on my machine” problem solved.
-🧱 Isolation: Each container runs in its own environment.
-🔧 Speed: Faster deployments and rollbacks.
-🌍 Portability: Run anywhere — cloud, on-prem, or local machine.
+**🚀 Lightweight**: Uses fewer resources than VMs.
+**🔁 Consistency**: Works across any environment — “It works on my machine” problem solved.
+**🧱 Isolation**: Each container runs in its own environment.
+**🔧 Speed**: Faster deployments and rollbacks.
+**🌍 Portability**: Run anywhere — cloud, on-prem, or local machine.
 
-🛠️ Core Concepts
+# 🛠️ Core Concepts
 
 | Concept        | Description                                         |
 | -------------- | --------------------------------------------------- |
@@ -42,12 +42,12 @@ docker pull nginx
 ```bash
 docker push username/myapp
 ```
-
 **6.Access the container’s shell (interactive mode)**
 ```bash
 docker exec -it <container_id_or_name> /bin/bash
 ```
 **7.Stop and remove containers**
-
+```
 docker stop <container_id><br>
 docker rm <container_id>
+```
