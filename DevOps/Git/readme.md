@@ -1,6 +1,6 @@
 # 🧩 Overview
 
-**Git** is a distributed version control system (VCS) that helps teams track changes, collaborate, and manage code efficiently.
+**Git** is a distributed version control system (DVCS) that helps teams track changes, collaborate, and manage code efficiently.
 
 # ⚙️ Why Git?
 
