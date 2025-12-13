@@ -4,7 +4,7 @@
 
 Terraform is an **open‑source Infrastructure as Code (IaC)** tool developed by **HashiCorp**. It enables you to **define, provision, and manage infrastructure** across multiple cloud providers using **HCL (HashiCorp Configuration Language)**.
 
-**Terraform is used to automate infrastructure using code**
+* **Terraform is used to automate infrastructure using code**
 
 ---
 
