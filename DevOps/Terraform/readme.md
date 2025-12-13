@@ -14,9 +14,9 @@
 
 🌐 **Multi‑Cloud Support** — Works with AWS, Azure, GCP, Kubernetes, and many more.
 
-🔁 **Consistency** — Ensures reproducible and reliable environments across teams.
+🔁 **Consistency** — Ensures the same environment is created every time for all teams.
 
-📈 **Scalability** — Easily manage small to enterprise‑level infrastructure.
+📈 **Scalability** — Helps manage infrastructure from small to large scale easily.
 
 🧠 **Version Control** — Track every infrastructure change using Git.
 
