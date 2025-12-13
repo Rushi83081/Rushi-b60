@@ -1,20 +1,20 @@
-🧩 Overview
+# 🧩 Overview
 
-Git is a distributed version control system (VCS) that helps teams track changes, collaborate, and manage code efficiently.
+**Git** is a distributed version control system (VCS) that helps teams track changes, collaborate, and manage code efficiently.
 
-⚙️ Why Git?
+# ⚙️ Why Git?
 
-🧑‍🤝‍🧑 Collaboration: Work together without overwriting code.
+**🧑‍🤝‍🧑 Collaboration**: Work together without overwriting code.
 
-🔁 Version History: Track every change.
+**🔁 Version History**: Track every change.
 
-🕒 Rollback: Easily revert to previous versions.
+**🕒 Rollback**: Easily revert to previous versions.
 
-🧱 Branching & Merging: Isolate and combine features seamlessly.
+**🧱 Branching & Merging**: Isolate and combine features seamlessly.
 
-🌍 Open Source & Universal: Works with GitHub, GitLab, Bitbucket, etc.
+**🌍 Open Source & Universal**: Works with GitHub, GitLab, Bitbucket, etc.
 
-🏗️ Core Concepts
+# 🏗️ Core Concepts
 
 | Concept               | Description                               |
 | --------------------- | ----------------------------------------- |
@@ -24,7 +24,7 @@ Git is a distributed version control system (VCS) that helps teams track changes
 | **Merge**             | Combines changes from branches.           |
 | **Remote**            | A repository hosted online (like GitHub). |
 
-🛠️ Basic Commands
+# 🛠️ Basic Commands
 
 # Initialize repository
 ```bash
