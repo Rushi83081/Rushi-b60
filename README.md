@@ -1,19 +1,12 @@
 # 🌟 Short Version (40–60 Seconds)
 
-Hello, my name is Rushikesh Gaikwad. I completed my BCA from Bharati Vidyapeeth, Sangli, and I am currently pursuing a DevOps course at CloudBlitz, Pune. During my training, I worked on multiple hands-on projects such as 3-Tier Architecture, Netflix Clone, Myntra Clone, Amazon Clone, Super Mario Deployment, and an Angular Application on Kubernetes.
+Hello, my name is **Rushikesh Gaikwad**. I have completed my **BCA** from Bharati Vidyapeeth, Sangli, and I am currently pursuing a DevOps course at CloudBlitz, Pune. During my training, I worked on hands-on projects such as **3-tier architecture, Netflix clone, Amazon clone, Myntra clone, and Super Mario deployment**.
 
-# 🖥️ Linux Skills
+In Linux, I worked on **file and directory management**, **user and group management**, **permissions**, **Vim editor**, and **package management** for installing and updating services.
 
-I learned file and directory management, the Vim editor, user and permission management, process monitoring, networking commands, and package installation.
+In AWS, I used **EC2** to launch servers, **VPC** to create isolated networks, **EBS, EFS, and S3** for storage, **RDS** for database management, **Route 53** for DNS services, and **CloudWatch** for monitoring.
 
-# ☁️ AWS Skills
-
-I worked with major AWS services including EC2, VPC, EBS/EFS, S3, CloudWatch, Route 53, CloudFront, Lambda, RDS, and IAM.
-
-# ⚙️ DevOps Skills
-
-I practiced Git for version control, Docker for containerization, Kubernetes for orchestration, Terraform for Infrastructure as Code, and Jenkins for CI/CD automation.
-I also used monitoring tools like Datadog and Grafana for performance visualization.
+In DevOps, I worked with **Git** for version control, **Docker** for containerization, **Kubernetes** for container orchestration, **Terraform** for infrastructure automation, **Jenkins** for CI/CD pipeline automation, and **Datadog and Grafana** for monitoring. Thank you.
 
 ---------------------------------------------------------------------------------------------------------------------
 
