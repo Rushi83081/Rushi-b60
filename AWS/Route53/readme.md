@@ -81,12 +81,17 @@
 
 ---
 
---------|--------|
-| **A Record** | Maps domain name to **IPv4 address** |
-| **AAAA Record** | Maps domain name to **IPv6 address** |
-| **CNAME Record** | Maps one domain to **another domain** |
-| **NS Record** | Defines **name servers** |
-| **MX Record** | Used for **mail servers** |
+Record Type	Purpose
+
+A Record → Maps domain name to IPv4 address
+
+AAAA Record → Maps domain name to IPv6 address
+
+CNAME Record → Maps one domain to another domain
+
+NS Record → Defines name servers
+
+MX Record → Used for mail servers
 
 🧠 **Viva Line:**
 
