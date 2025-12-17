@@ -34,7 +34,7 @@
 
 ---
 
-## ⭐ Alias Record (Very Important for Viva)
+## ⭐ Alias Record 
 
 ### 🔹 What is Alias Record?
 
