@@ -1,8 +1,8 @@
-# 🌐 AWS Route 53 – Viva Notes (Only Asked Topics)
+# 🌐 AWS 'Route 53' 
 
 ---
 
-## 1️⃣ What is Route 53? | Types Available
+## 1️⃣ What is Route 53? 
 
 * **Route 53** is an **AWS DNS (Domain Name System) service**.
 * It is used to **route user traffic to AWS resources**.
