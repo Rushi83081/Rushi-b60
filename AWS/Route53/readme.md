@@ -81,24 +81,6 @@
 
 ---
 
-Record Type	Purpose
-
-A Record → Maps domain name to IPv4 address
-
-AAAA Record → Maps domain name to IPv6 address
-
-CNAME Record → Maps one domain to another domain
-
-NS Record → Defines name servers
-
-MX Record → Used for mail servers
-
-🧠 **Viva Line:**
-
-> A, AAAA, CNAME, NS, and MX are the main DNS record types.
-
----
-
 ## 3️⃣ Routing Policy
 
 * Routing policy decides **how traffic is routed** to resources.
@@ -118,7 +100,7 @@ MX Record → Used for mail servers
 
 ---
 
-## 4️⃣ Practical Steps: Map EC2 IP to Domain Name (Simple Process)
+## 4️⃣ Practical Steps: Map EC2 IP to Domain Name 
 
 ### 🔹 Step 1: Launch EC2 Instance
 
