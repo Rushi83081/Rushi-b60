@@ -79,6 +79,7 @@ Flow Explanation (Easy):
 **🟢 STEP 1: Launch EC2**
 
 ✔ Launch Amazon Linux 
+
 ✔ Connect instance
 
 ---
@@ -114,6 +115,8 @@ Ctrl + C
 stress --cpu 1 --timeout 300
 ```
 
+---
+
 **🟢 STEP 4: Create CloudWatch Alarm**
 
 📊 Go to CloudWatch → Alarms → Create alarm
@@ -124,6 +127,8 @@ stress --cpu 1 --timeout 300
 ✔ Condition:
 ➡ Threshold > 70%
 ➡ Time 1 minute
+
+---
 
 **🟢 STEP 5: Create NEW SNS from CloudWatch**
 
@@ -136,7 +141,11 @@ stress --cpu 1 --timeout 300
 
 📨 Confirm email from inbox ✅
 
+---
+
 **🟢 STEP 6: Finish Alarm**
 
 ✔ Alarm name: EC2-High-CPU
 ✔ **Create alarm**
+
+---
