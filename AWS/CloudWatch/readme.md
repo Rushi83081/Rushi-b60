@@ -81,6 +81,8 @@ Flow Explanation (Easy):
 ✔ Launch Amazon Linux 
 ✔ Connect instance
 
+---
+
 **🟢 STEP 2: Install Stress Tool**
 
 🔧 Update system
@@ -92,6 +94,8 @@ sudo yum update -y
 ```
 sudo yum install stress -y
 ```
+
+---
 
 **🟢 STEP 3: Run Stress Command**
 
