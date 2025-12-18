@@ -7,6 +7,7 @@ It collects metrics, logs, and events, allows you to set alarms, and helps you t
 
 **CloudWatch** helps you see what is happening in your AWS environment and react when something goes wrong.
 
+
 ## ☁️ 1. What is CloudWatch?
 
 #### Amazon CloudWatch monitors:
@@ -30,6 +31,7 @@ It collects metrics, logs, and events, allows you to set alarms, and helps you t
 🧠 Simple Analogy:
 CloudWatch is like a health monitor for your AWS resources.
 
+
 ## 🧩 2. Core Components of CloudWatch
 
 | 🔹 Component             | 📘 Description                                       |
@@ -41,23 +43,34 @@ CloudWatch is like a health monitor for your AWS resources.
 | **Dashboards**           | Visual display of metrics                            |
 | **Logs Insights**        | Query and analyze logs                               |
 
+
 ## ⚙️ 3. Common Use Cases
 
 ✔ Monitor EC2 CPU, disk, and network
+
 ✔ Track Lambda invocations and errors
+
 ✔ Store application logs centrally
+
 ✔ Send alerts using SNS
+
 ✔ Trigger Auto Scaling
+
 ✔ Create real-time dashboards
+
 
 ## 🏗️ 4. How CloudWatch Works (Flow)
 
 Flow Explanation (Easy):
 
 1️⃣ AWS services generate metrics & logs
+
 2️⃣ CloudWatch collects them
+
 3️⃣ You create alarms on metrics
+
 4️⃣ Alarm triggers action (SNS / Auto Scaling / EC2 action)
+
 5️⃣ Data is visualized on dashboards
 
 **🟢 STEP 1: Launch EC2**
@@ -76,6 +89,7 @@ sudo yum update -y
 ```
 sudo yum install stress -y
 ```
+
 **🟢 STEP 3: Run Stress Command**
 
 🔥 Increase CPU
@@ -92,6 +106,7 @@ Ctrl + C
 ```
 stress --cpu 1 --timeout 300
 ```
+
 **🟢 STEP 4: Create CloudWatch Alarm**
 
 📊 Go to CloudWatch → Alarms → Create alarm
