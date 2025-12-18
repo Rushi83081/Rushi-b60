@@ -30,7 +30,7 @@ It collects metrics, logs, and events, allows you to set alarms, and helps you t
 🧠 Simple Analogy:
 CloudWatch is like a health monitor for your AWS resources.
 
-🧩 2. Core Components of CloudWatch
+## 🧩 2. Core Components of CloudWatch
 
 | 🔹 Component             | 📘 Description                                       |
 | ------------------------ | ---------------------------------------------------- |
@@ -50,7 +50,7 @@ CloudWatch is like a health monitor for your AWS resources.
 ✔ Trigger Auto Scaling
 ✔ Create real-time dashboards
 
-🏗️ 4. How CloudWatch Works (Flow)
+## 🏗️ 4. How CloudWatch Works (Flow)
 
 Flow Explanation (Easy):
 
@@ -60,12 +60,12 @@ Flow Explanation (Easy):
 4️⃣ Alarm triggers action (SNS / Auto Scaling / EC2 action)
 5️⃣ Data is visualized on dashboards
 
-🟢 STEP 1: Launch EC2
+**🟢 STEP 1: Launch EC2**
 
 ✔ Launch Amazon Linux 
 ✔ Connect instance
 
-🟢 STEP 2: Install Stress Tool
+**🟢 STEP 2: Install Stress Tool**
 
 🔧 Update system
 ```
@@ -76,7 +76,7 @@ sudo yum update -y
 ```
 sudo yum install stress -y
 ```
-🟢 STEP 3: Run Stress Command
+**🟢 STEP 3: Run Stress Command**
 
 🔥 Increase CPU
 ```
@@ -92,7 +92,7 @@ Ctrl + C
 ```
 stress --cpu 1 --timeout 300
 ```
-🟢 STEP 4: Create CloudWatch Alarm
+**🟢 STEP 4: Create CloudWatch Alarm**
 
 📊 Go to CloudWatch → Alarms → Create alarm
 
@@ -103,7 +103,7 @@ stress --cpu 1 --timeout 300
 ➡ Threshold > 70%
 ➡ Time 1 minute
 
-🟢 STEP 5: Create NEW SNS from CloudWatch
+**🟢 STEP 5: Create NEW SNS from CloudWatch**
 
 🔔 Alarm state: In alarm
 
@@ -114,7 +114,7 @@ stress --cpu 1 --timeout 300
 
 📨 Confirm email from inbox ✅
 
-🟢 STEP 6: Finish Alarm
+**🟢 STEP 6: Finish Alarm**
 
 ✔ Alarm name: EC2-High-CPU
 ✔ **Create alarm**
