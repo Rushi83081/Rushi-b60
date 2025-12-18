@@ -9,28 +9,29 @@ It collects metrics, logs, and events, allows you to set alarms, and helps you t
 
 ## ☁️ 1. What is CloudWatch?
 
-Amazon CloudWatch monitors:
+* Amazon CloudWatch monitors:
 
-AWS resources (EC2, RDS, Lambda, ELB, S3, etc.)
+* AWS resources (EC2, RDS, Lambda, ELB, S3, etc.)
 
-Applications running on AWS or on-premises
+* Applications running on AWS or on-premises
 
 CloudWatch helps you to:
 
-📊 Collect and track metrics
+* 📊 Collect and track metrics
 
-📂 Monitor and store logs
+* 📂 Monitor and store logs
 
-🚨 Create alarms
+* 🚨 Create alarms
 
-⚙️ Automate actions
+* ⚙️ Automate actions
 
-📈 Visualize data using dashboards
+* 📈 Visualize data using dashboards
 
 🧠 Simple Analogy:
 CloudWatch is like a health monitor for your AWS resources.
 
 🧩 2. Core Components of CloudWatch
+
 | 🔹 Component             | 📘 Description                                       |
 | ------------------------ | ---------------------------------------------------- |
 | **Metrics**              | Numerical performance data (example: CPUUtilization) |
