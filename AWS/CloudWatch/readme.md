@@ -122,10 +122,13 @@ stress --cpu 1 --timeout 300
 📊 Go to CloudWatch → Alarms → Create alarm
 
 ✔ Select metric:
+
 ➡ **EC2 → Per-Instance Metrics → CPUUtilization**
 
 ✔ Condition:
+
 ➡ Threshold > 70%
+
 ➡ Time 1 minute
 
 ---
@@ -135,8 +138,11 @@ stress --cpu 1 --timeout 300
 🔔 Alarm state: In alarm
 
 ✉ Notification:
+
 ➡ Create new SNS topic
+
 ➡ Topic name: HighCPUAlert
+
 ➡ Email endpoint: your-email@gmail.com
 
 📨 Confirm email from inbox ✅
@@ -146,6 +152,7 @@ stress --cpu 1 --timeout 300
 **🟢 STEP 6: Finish Alarm**
 
 ✔ Alarm name: EC2-High-CPU
-✔ **Create alarm**
+
+**✔ Create alarm**
 
 ---
