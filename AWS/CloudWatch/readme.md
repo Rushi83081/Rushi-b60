@@ -73,6 +73,9 @@ Flow Explanation (Easy):
 
 5️⃣ Data is visualized on dashboards
 
+
+## ▶️ Practical 
+
 **🟢 STEP 1: Launch EC2**
 
 ✔ Launch Amazon Linux 
