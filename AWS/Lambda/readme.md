@@ -100,6 +100,6 @@ def lambda_handler(event, context):
 
 ✔ Instance state changes:
 
-▶️ Running
+* ▶️ Running
 
-⏹ Stopped
+* ⏹ Stopped
