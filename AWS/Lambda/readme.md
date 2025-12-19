@@ -6,11 +6,13 @@
 
 ✔ Service: Lambda
 
-✔ Policy:  * AmazonEC2FullAccess
+✔ Policy: 
 
-           * AWSLambdaBasicExecutionRole
+* AmazonEC2FullAccess
+
+* AWSLambdaBasicExecutionRole
  
-           * AmazonLambda_FullAccess
+* AmazonLambda_FullAccess
 
 ✔ Role name: Lambda-EC2-Role
 
