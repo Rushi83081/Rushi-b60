@@ -4,9 +4,9 @@
 
 **🔐 IAM → Roles → Create role**
 
-✔ Service: Lambda
+**✔ Service: Lambda**
 
-✔ Policy: 
+**✔ Policy:** 
 
 * AmazonEC2FullAccess
 
