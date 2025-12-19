@@ -21,11 +21,11 @@
 
 ☁️ Lambda → Create function
 
-✔ Name: EC2-Start-Stop
+* ✔ Name: EC2-Start-Stop
 
-✔ Runtime: Python 3.9
+* ✔ Runtime: Python 3.9
 
-✔ Role: Lambda-EC2-Role
+* ✔ Role: Lambda-EC2-Role
 
 
 ## 🟢 Step 3: Add EC2 START Code
