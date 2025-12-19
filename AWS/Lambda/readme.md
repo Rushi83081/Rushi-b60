@@ -11,7 +11,7 @@
 ✔ Role name: Lambda-EC2-Role
 
 
-**🟢 Step 2: Create Lambda Function**
+## 🟢 Step 2: Create Lambda Function
 
 ☁️ Lambda → Create function
 
@@ -22,7 +22,7 @@
 ✔ Role: Lambda-EC2-Role
 
 
-**🟢 Step 3: Add EC2 START Code**
+## 🟢 Step 3: Add EC2 START Code
 
 💻 Lambda → Code tab
 
@@ -38,7 +38,7 @@
 ```
 ▶️ Result: EC2 STARTS
 
-### 🟢 Step 4: Add EC2 STOP Code
+## 🟢 Step 4: Add EC2 STOP Code
 
 💻 Replace code with EC2 stop code
 
@@ -52,7 +52,7 @@
 ```
 ⏹ Result: EC2 STOPS
 
-### 🟢 Step 5: Verify
+## 🟢 Step 5: Verify
 
 🖥️ EC2 Console
 
