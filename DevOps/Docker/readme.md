@@ -5,9 +5,13 @@
 # ⚙️ Why Docker?
 
 **🚀 Lightweight**: Uses fewer resources than VMs.
+
 **🔁 Consistency**: Works across any environment — “It works on my machine” problem solved.
+
 **🧱 Isolation**: Each container runs in its own environment.
+
 **🔧 Speed**: Faster deployments and rollbacks.
+
 **🌍 Portability**: Run anywhere — cloud, on-prem, or local machine.
 
 # 🛠️ Core Concepts
