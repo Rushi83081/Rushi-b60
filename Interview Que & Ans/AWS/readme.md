@@ -1,198 +1,211 @@
-### 1️⃣ What is Cloud Computing?
+1️⃣ What is Cloud Computing?
+💡 Answer:
 
-### 💡 Answer:
-Cloud computing delivers on-demand computing resources like servers, storage, databases, and applications over the internet. It provides scalability, flexibility, and pay-as-you-go pricing, eliminating the need for upfront hardware investment.
+Cloud computing delivers on-demand computing resources like servers, storage, databases, and applications over the internet.
+It offers scalability, flexibility, and pay-as-you-go pricing, removing the need for upfront hardware investment.
 
-### 2️⃣ Explain Cloud Service Models
+2️⃣ Explain Cloud Service Models
+💡 Answer:
 
-### 💡 Answer: 
 Cloud has three main service models:
 
-IaaS (Infrastructure as a Service): Provides virtualized computing resources like EC2.
+IaaS (Infrastructure as a Service): Provides virtualized resources like EC2
 
-PaaS (Platform as a Service): Offers a platform for building apps without managing infrastructure.
+PaaS (Platform as a Service): Platform to build apps without managing infrastructure
 
-SaaS (Software as a Service): Fully managed software accessed via browser or API, like Gmail or Salesforce.
+SaaS (Software as a Service): Fully managed software via browser/API (e.g., Gmail, Salesforce)
 
 3️⃣ Explain Deployment Models in Cloud
-
 💡 Answer:
 
-Public Cloud: Resources are shared and managed by a cloud provider.
+Public Cloud: Shared resources managed by cloud provider
 
-Private Cloud: Resources are dedicated to a single organization.
+Private Cloud: Dedicated resources for a single organization
 
-Hybrid Cloud: Combines public and private for flexibility.
+Hybrid Cloud: Combination of public & private cloud
 
-Multi-Cloud: Uses multiple providers to avoid vendor lock-in.
+Multi-Cloud: Uses multiple providers to avoid vendor lock-in
 
 4️⃣ Explain IAM Service
+💡 Answer:
 
-💡 Answer: AWS Identity and Access Management (IAM) controls access to AWS resources securely. It allows creating users, groups, and roles, assigning permissions, and enforcing security policies.
+AWS IAM (Identity and Access Management) securely controls access to AWS resources by managing users, groups, roles, and permissions.
 
 5️⃣ Explain Policies in IAM
+💡 Answer:
 
-💡 Answer: Policies are JSON documents that define what actions are allowed or denied on AWS resources. They can be attached to users, groups, or roles to manage permissions effectively.
+IAM Policies are JSON documents that define allowed or denied actions on AWS resources.
+They are attached to users, groups, or roles.
 
 6️⃣ Explain Roles in IAM
+💡 Answer:
 
-💡 Answer: Roles grant temporary access to AWS resources for users, applications, or services without sharing permanent credentials. They are ideal for cross-account access or services like EC2.
+IAM Roles provide temporary access to AWS resources without sharing credentials.
+Used for EC2 services and cross-account access.
 
 7️⃣ Difference between Roles and Policies
-
 💡 Answer:
 
-Roles: Assign temporary permissions to entities.
+Roles: Grant temporary permissions
 
-Policies: Define what actions are allowed or denied.
-Roles use policies to specify permissions.
+Policies: Define what actions are allowed or denied
+➡️ Roles use policies to get permissions
 
 8️⃣ Explain EC2 Service
-
-💡 Answer: Amazon EC2 provides resizable virtual servers in the cloud for running applications. You can scale capacity, choose operating systems, and pay only for what you use.
-
-9️⃣ Explain Instance Types and Purchasing Options
-
 💡 Answer:
 
-Instance Types: Optimized for CPU, memory, storage, or GPU workloads.
+Amazon EC2 provides resizable virtual servers to run applications with flexible OS selection and pay-as-you-go pricing.
+
+9️⃣ Explain Instance Types and Purchasing Options
+💡 Answer:
+
+Instance Types: Optimized for CPU, memory, storage, or GPU
 
 Purchasing Options:
 
-On-Demand: Pay per hour/second.
+On-Demand: Pay per second/hour
 
-Reserved: Lower cost for long-term use.
+Reserved: Lower cost for long-term use
 
-Spot: Use spare capacity at discounted rates.
+Spot: Unused capacity at discount
 
-Savings Plans: Flexible pricing for consistent workloads.
+Savings Plans: Flexible long-term pricing
 
 🔟 Difference between AMI and Snapshot
-
 💡 Answer:
 
-AMI (Amazon Machine Image): Template for launching instances with preconfigured OS and apps.
+AMI: Template to launch EC2 with OS & software
 
-Snapshot: Backup of an EBS volume, used for recovery or creating new volumes.
+Snapshot: Backup of an EBS volume
 
 1️⃣1️⃣ Explain EBS Volume Types
-
 💡 Answer:
 
-General Purpose SSD (gp3/gp2): Balanced performance.
+gp3 / gp2: General purpose SSD
 
-Provisioned IOPS SSD (io2/io1): High-performance workloads.
+io2 / io1: High IOPS workloads
 
-Throughput Optimized HDD (st1): Big data/streaming.
+st1: Throughput-optimized HDD
 
-Cold HDD (sc1): Low-cost, infrequent access.
+sc1: Cold HDD for infrequent access
 
 1️⃣2️⃣ Explain Concept of Load Balancing
+💡 Answer:
 
-💡 Answer: Load balancing distributes incoming traffic across multiple servers to improve availability, reliability, and performance, preventing single-server overload.
+Load Balancing distributes traffic across multiple servers to ensure high availability, reliability, and performance.
 
 1️⃣3️⃣ Difference between ALB and NLB
-
 💡 Answer:
 
-ALB (Application Load Balancer): Operates at Layer 7, supports HTTP/HTTPS, advanced routing, and host/path-based rules.
+ALB: Layer 7, HTTP/HTTPS, path-based routing
 
-NLB (Network Load Balancer): Operates at Layer 4, handles TCP traffic, ultra-low latency, ideal for performance-critical apps.
+NLB: Layer 4, TCP traffic, ultra-low latency
 
 1️⃣4️⃣ Explain Auto Scaling
+💡 Answer:
 
-💡 Answer: Auto Scaling automatically adjusts EC2 instances based on traffic demand. It ensures high availability and cost efficiency by adding or removing instances dynamically.
+Auto Scaling automatically adds or removes EC2 instances based on traffic, ensuring cost efficiency and high availability.
 
 1️⃣5️⃣ Explain S3 Service and Its Advantages
+💡 Answer:
 
-💡 Answer: Amazon S3 is object storage offering high durability, scalability, and availability. Advantages include easy data retrieval, security, cost-effectiveness, and global accessibility.
+Amazon S3 is object storage offering high durability, scalability, security, and global access.
 
 1️⃣6️⃣ Difference between S3, EFS, and EBS
-
 💡 Answer:
 
-S3: Object storage, highly scalable.
+S3: Object storage
 
-EFS: Shared file storage, NFS protocol, elastic and scalable.
+EFS: Shared file system (NFS)
 
-EBS: Block storage for EC2, persistent and high-performance.
+EBS: Block storage for EC2
 
 1️⃣7️⃣ Explain S3 Storage Classes
-
 💡 Answer:
 
-Standard: Frequent access.
+Standard: Frequent access
 
-Intelligent-Tiering: Auto-optimizes cost.
+Intelligent-Tiering: Automatic cost optimization
 
-Infrequent Access: Rarely accessed.
+IA: Infrequent access
 
-Glacier / Deep Archive: Long-term, low-cost storage.
+Glacier / Deep Archive: Long-term storage
 
 1️⃣8️⃣ What is Lifecycle Policy in S3
+💡 Answer:
 
-💡 Answer: Lifecycle policies automate object management in S3, like moving objects between storage classes or deleting old data to optimize cost.
+Lifecycle policies automate data movement and deletion to reduce storage cost.
 
 1️⃣9️⃣ Explain VPC Service
+💡 Answer:
 
-💡 Answer: Amazon VPC lets you create a private network in AWS, controlling subnets, IP ranges, routing, and security for resources.
+Amazon VPC allows you to create a private network with full control over IP ranges, subnets, routing, and security.
 
 2️⃣0️⃣ Difference between Public and Private Subnet
-
 💡 Answer:
 
-Public Subnet: Has internet gateway access.
+Public Subnet: Internet accessible
 
-Private Subnet: No direct internet access; used for sensitive workloads.
+Private Subnet: No direct internet access
 
 2️⃣1️⃣ Explain NAT
-
-💡 Answer: NAT (Network Address Translation) allows instances in private subnets to access the internet securely without exposing them directly.
-
-2️⃣2️⃣ Explain Peering Connection
-
-💡 Answer: VPC Peering allows secure private communication between two VPCs without traversing the public internet.
-
-2️⃣3️⃣ Difference between NACL and SG
-
 💡 Answer:
 
-NACL: Subnet-level firewall, stateless, controls inbound/outbound traffic.
+NAT enables private subnet instances to access the internet without being publicly exposed.
 
-SG: Instance-level firewall, stateful, tracks connections automatically.
+2️⃣2️⃣ Explain Peering Connection
+💡 Answer:
+
+VPC Peering enables private communication between two VPCs securely.
+
+2️⃣3️⃣ Difference between NACL and SG
+💡 Answer:
+
+NACL: Subnet-level, stateless
+
+Security Group: Instance-level, stateful
 
 2️⃣4️⃣ What is Domain Name
+💡 Answer:
 
-💡 Answer: A human-readable web address mapped to an IP using DNS, making websites accessible without memorizing IPs.
+A domain name is a human-readable address mapped to an IP using DNS.
 
 2️⃣5️⃣ What is Hosted Zone
+💡 Answer:
 
-💡 Answer: A container in Route 53 that holds DNS records for a domain and manages how traffic is routed.
+A Hosted Zone stores DNS records and manages traffic routing in Route 53.
 
 2️⃣6️⃣ Explain Records in Route 53
+💡 Answer:
 
-💡 Answer: DNS records like A, CNAME, MX, TXT define how domain traffic is routed to servers or services.
+Records like A, CNAME, MX, TXT control how traffic reaches AWS services.
 
 2️⃣7️⃣ Explain Routing Policies
+💡 Answer:
 
-💡 Answer: Route 53 uses routing policies like Simple, Weighted, Latency, Failover, and Geolocation to control traffic flow for domains.
+Route 53 routing policies include Simple, Weighted, Latency, Failover, and Geolocation.
 
 2️⃣8️⃣ Explain Concept of SSL
+💡 Answer:
 
-💡 Answer: SSL encrypts data between client and server, ensuring secure communication and protecting sensitive information online.
+SSL encrypts data between client and server for secure communication.
 
 2️⃣9️⃣ Explain CDN
+💡 Answer:
 
-💡 Answer: A Content Delivery Network caches and delivers content closer to users, reducing latency and improving performance globally.
+A CDN delivers content from nearby locations to reduce latency and improve speed.
 
 3️⃣0️⃣ What is Edge Location
+💡 Answer:
 
-💡 Answer: Edge locations are CDN points of presence worldwide that serve cached content to reduce latency.
+Edge locations cache content close to users to reduce response time.
 
-3️⃣1️⃣ Explain OAC/OAI in CloudFront
+3️⃣1️⃣ Explain OAC / OAI in CloudFront
+💡 Answer:
 
-💡 Answer: Origin Access Identity (OAI) / Origin Access Control (OAC) restricts S3 bucket access so only CloudFront can serve the content securely.
+OAI / OAC restricts S3 access so only CloudFront can serve content.
 
 3️⃣2️⃣ What is Latency
+💡 Answer:
 
-💡 Answer: Latency is the delay between sending a request and receiving a response in a network, impacting performance.
+Latency is the time delay between request and response in a network.
