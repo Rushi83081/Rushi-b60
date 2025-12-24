@@ -1,10 +1,13 @@
-1️⃣ What is Cloud Computing?
+### 1️⃣ What is Cloud Computing?
 
-💡 Answer: Cloud computing delivers on-demand computing resources like servers, storage, databases, and applications over the internet. It provides scalability, flexibility, and pay-as-you-go pricing, eliminating the need for upfront hardware investment.
+### 💡 Answer:
+Cloud computing delivers on-demand computing resources like servers, storage, databases, and applications over the internet. It provides scalability, flexibility, and pay-as-you-go pricing, eliminating the need for upfront hardware investment.
 
-2️⃣ Explain Cloud Service Models
+### 2️⃣ Explain Cloud Service Models
 
-💡 Answer: Cloud has three main service models:
+### 💡 Answer: 
+
+Cloud has three main service models:
 
 IaaS (Infrastructure as a Service): Provides virtualized computing resources like EC2.
 
