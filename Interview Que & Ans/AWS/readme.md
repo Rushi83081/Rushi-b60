@@ -6,7 +6,6 @@ Cloud computing delivers on-demand computing resources like servers, storage, da
 ### 2️⃣ Explain Cloud Service Models
 
 ### 💡 Answer: 
-
 Cloud has three main service models:
 
 IaaS (Infrastructure as a Service): Provides virtualized computing resources like EC2.
