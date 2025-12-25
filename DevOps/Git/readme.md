@@ -4,15 +4,15 @@
 
 # ⚙️ Why Git?
 
-**🧑‍🤝‍🧑 Collaboration**: Work together without overwriting code.
+  **🧑‍🤝‍🧑 Collaboration**: Work together without overwriting code.
 
-**🔁 Version History**: Track every change.
+  **🔁 Version History**: Track every change.
 
-**🕒 Rollback**: Easily revert to previous versions.
+  **🕒 Rollback**: Easily revert to previous versions.
 
-**🧱 Branching & Merging**: Isolate and combine features seamlessly.
+  **🧱 Branching & Merging**: Isolate and combine features seamlessly.
 
-**🌍 Open Source & Universal**: Works with GitHub, GitLab, Bitbucket, etc.
+  **🌍 Open Source & Universal**: Works with GitHub, GitLab, Bitbucket, etc.
 
 # 🏗️ Core Concepts
 
