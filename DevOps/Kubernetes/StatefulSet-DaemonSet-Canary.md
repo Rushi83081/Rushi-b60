@@ -3,8 +3,8 @@
 
 ## 🧱 StatefulSet
 
-A **StatefulSet** manages stateful applications that need stable network identities and persistent storage per Pod (like databases, queues, or clustered systems).  
-Unlike Deployments, Pods in a StatefulSet have ordered, unique names and can keep data across restarts using persistent volumes.[web:32][web:35]
+- A **StatefulSet** manages stateful applications that need stable network identities and persistent storage per Pod (like databases, queues, or clustered systems).  
+- Unlike Deployments, Pods in a StatefulSet have ordered, unique names and can keep data across restarts using persistent volumes.
 
 ### 🔑 Key Characteristics
 
