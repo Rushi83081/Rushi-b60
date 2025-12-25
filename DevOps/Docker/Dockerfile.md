@@ -5,6 +5,7 @@
 * A Dockerfile is a text document that contains a set of instructions used to build a Docker image.
 * It automates the process of creating images by defining the environment, dependencies, and commands needed to run an application inside a container.
 
+   ---
 🔹 Components of a Dockerfile
 1. FROM
 
