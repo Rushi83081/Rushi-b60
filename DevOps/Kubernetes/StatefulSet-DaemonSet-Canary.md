@@ -112,44 +112,75 @@ kubectl delete statefulset web
 
 ## 🛰️ DaemonSet
 
-A **DaemonSet** ensures that a copy of a Pod runs on **every node** (or on a selected subset of nodes).  
-It is typically used for cluster-wide agents such as logging, monitoring, or storage daemons.[web:36][web:39]
+## 🧩 DaemonSet
 
-### 🔑 Key Characteristics
+### 📘 What is a DaemonSet?
 
-- Automatically runs one Pod per node (or per matching node selector / taint rules).[web:36]  
-- When a node is added, a Pod is automatically scheduled onto it; when a node is removed, its Pod is deleted.[web:36][web:39]  
-- Ideal for node-level functionality like log collection, metrics, or networking agents.[web:36][web:39]
+A **DaemonSet** ensures that **one copy of a Pod runs on every node**  
+(or on a **selected subset of nodes**) in a Kubernetes cluster.
 
-### ✅ When to Use DaemonSet
+It is commonly used for **cluster-wide services** such as logging, monitoring, and storage agents.
 
-- Log collectors (Fluentd, Filebeat, Logstash) on every node.[web:36][web:39]  
-- Monitoring agents (Prometheus node exporter, Datadog agent) on all nodes.[web:36][web:39]  
-- Network plugins or storage daemons that must run node-wide.[web:36]
+---
+
+## 🔑 Key Characteristics of DaemonSet
+
+- 🖥️ **One Pod per Node**  
+  Automatically runs a Pod on **every node** (or nodes matching selectors/taints).
+
+- 🔄 **Automatic Node Handling**  
+  - When a node is **added**, a Pod is created automatically  
+  - When a node is **removed**, the Pod is deleted automatically
+
+- 🛠️ **Node-Level Responsibilities**  
+  Ideal for workloads that must run **directly on each node**.
+
+---
+
+## ✅ When to Use a DaemonSet
+
+- 📜 **Log Collection**  
+  Fluentd, Filebeat, Logstash
+
+- 📊 **Monitoring Agents**  
+  Prometheus Node Exporter, Datadog Agent
+
+- 🌐 **Networking & Storage Components**  
+  CNI plugins, storage daemons, security agents
+
+---
+
+## 🎯 One-Liner
+
+> **A DaemonSet ensures that a Pod runs on every node in a Kubernetes cluster.**
 
 ## deamonSet.yaml
-```
+
+```yaml
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-name: node-logger
+  name: node-logger
+
 spec:
-selector:
-matchLabels:
-app: node-logger
-template:
-metadata:
-labels:
-app: node-logger
-spec:
-containers:
-- name: logger
-image: my-logger-image:latest
-resources:
-limits:
-cpu: "100m"
-memory: "128Mi"
+  selector:
+    matchLabels:
+      app: node-logger
+
+  template:
+    metadata:
+      labels:
+        app: node-logger
+    spec:
+      containers:
+        - name: logger
+          image: my-logger-image:latest
+          resources:
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
 ```
+
 ### 🧾 Useful DaemonSet Commands
 
 Create from manifest
@@ -165,62 +196,98 @@ Delete a DaemonSet
 ```
 kubectl delete daemonset node-logger
 ```
----
 
 ## 🚦 Canary Deployment
 
-A **canary deployment** is a **release strategy**, not a separate Kubernetes object.  
-It gradually shifts a small portion of traffic to a new version, observes its behavior, and then either rolls forward or rolls back, reducing risk compared to an all-at-once rollout.[web:37][web:40]
+### 📘 What is a Canary Deployment?
 
-### 🔑 Key Characteristics
+A **Canary Deployment** is a **release strategy**, not a Kubernetes object.  
+It gradually sends a **small portion of traffic** to a new application version, observes its behavior, and then either **rolls forward or rolls back**.
 
-- Run **two versions** at the same time: stable (current) and canary (new).[web:37]  
-- Route only a small percentage (for example 5–10%) of traffic to the canary initially.[web:37][web:40]  
-- Increase traffic in steps after successful monitoring; if issues appear, roll back quickly.[web:37][web:40]
+This approach **reduces risk** compared to deploying a new version to all users at once.
 
-### ✅ Typical Canary Flow
+---
 
-1. **Deploy v1 (stable)** under a Service (e.g., `my-app-svc`).  
-2. **Deploy v2 (canary)** using another Deployment or by adjusting replicas/labels.  
-3. Use one of:
-   - Weighted routing via Ingress / Service mesh (NGINX Ingress, Istio, Linkerd, Traefik, etc.).  
-   - Tools like **Flagger**, **Argo Rollouts**, etc., for automated progressive delivery.[web:37][web:40]  
-4. Gradually increase the percentage of traffic to v2 (e.g., 5% → 20% → 50% → 100%).[web:37][web:40]  
-5. Monitor metrics (latency, error rate, CPU) and **either complete rollout or roll back**.[web:40]
+## 🔑 Key Characteristics of Canary Deployment
+
+- 🔁 **Two Versions Running Together**  
+  - **Stable (v1)** → current version  
+  - **Canary (v2)** → new version
+
+- 📊 **Partial Traffic Routing**  
+  Initially route a small percentage of traffic (e.g., **5–10%**) to the canary version.
+
+- 📈 **Gradual Traffic Increase**  
+  Traffic is increased step-by-step if the canary performs well.
+
+- 🔙 **Quick Rollback**  
+  If issues are detected, traffic is immediately routed back to the stable version.
+
+---
+
+## ✅ Typical Canary Deployment Flow
+
+1️⃣ **Deploy v1 (Stable)**  
+Deploy the current version behind a Service (e.g., `my-app-svc`).
+
+2️⃣ **Deploy v2 (Canary)**  
+Deploy the new version using:
+- A separate Deployment  
+- Or adjusted labels / replica counts
+
+3️⃣ **Configure Traffic Routing** using:
+- 🌐 Ingress Controllers (NGINX Ingress, Traefik)  
+- 🧩 Service Mesh (Istio, Linkerd)  
+- 🤖 Progressive Delivery Tools (Flagger, Argo Rollouts)
+
+4️⃣ **Increase Traffic Gradually**  
+Example flow:  
+`5% → 20% → 50% → 100%`
+
+5️⃣ **Monitor & Decide**  
+Monitor:
+- Latency
+- Error rate
+- CPU / Memory usage
+
+✔ Success → complete rollout  
+❌ Failure → rollback to stable version
+
+---
+
+## 🎯 Interview One-Liner
+
+> **Canary deployment releases a new version to a small set of users first to reduce deployment risk.**
+---
 
 ## canary.yaml
-```
+
+### 🔹 Deployment (Stable)
+
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: my-app-stable
-spec:
-replicas: 8
-selector:
-matchLabels:
-app: my-app
-version: v1
-template:
-metadata:
-labels:
-app: my-app
-version: v1
-spec:
-containers:
-- name: app
-image: my-app:v1
+  name: my-app-stable
 
-apiVersion: v1
-kind: Service
-metadata:
-name: my-app-svc
 spec:
-selector:
-app: my-app
-ports:
-- port: 80
-- targetPort: 80
+  replicas: 8
+  selector:
+    matchLabels:
+      app: my-app
+      version: v1
+
+  template:
+    metadata:
+      labels:
+        app: my-app
+        version: v1
+    spec:
+      containers:
+        - name: app
+          image: my-app:v1
 ```
+
 Check Deployments and Pods
 ```
 kubectl get deploy
