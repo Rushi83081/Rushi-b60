@@ -28,6 +28,7 @@ FROM ubuntu:20.04
 ```
 LABEL maintainer="abhipraydh96@gmail.com"
 ```
+---
 
 🔹 3. RUN
 
@@ -35,6 +36,7 @@ LABEL maintainer="abhipraydh96@gmail.com"
 ```
 RUN apt-get update && apt-get install -y nginx
 ```
+---
 
 🔹 4. COPY / ADD
 
@@ -42,6 +44,7 @@ RUN apt-get update && apt-get install -y nginx
 ```
 COPY index.html /usr/share/nginx/html/
 ```
+---
 
 🔹 5. WORKDIR
 
@@ -49,6 +52,7 @@ COPY index.html /usr/share/nginx/html/
 ```
 WORKDIR /app
 ```
+---
 
 🔹 6. EXPOSE
 
@@ -56,6 +60,7 @@ WORKDIR /app
 ```
 EXPOSE 80
 ```
+---
 
 🔹 7. CMD
 
@@ -63,6 +68,7 @@ EXPOSE 80
 ```
 CMD ["nginx", "-g", "daemon off;"]
 ```
+---
 
 🔹 8. ENTRYPOINT
 
@@ -70,6 +76,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 ENTRYPOINT ["nginx"]
 ```
+---
 
 🔹 Example 1: Dockerfile for Nginx on Ubuntu
 ```
@@ -90,6 +97,7 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
+---
 
 🔹 Example 2: Create Dockerfile to host httpd webserver
 ```
@@ -99,6 +107,7 @@ COPY index.html /var/www/html
 EXPOSE 80
 CMD ["httpd", "-D", "FOREGROUND"]
 ```
+---
 
 🔹 Example 3: Create Dockerfile to host nginx webserver
 ```
