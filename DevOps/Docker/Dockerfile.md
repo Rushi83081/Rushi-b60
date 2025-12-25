@@ -52,7 +52,7 @@ WORKDIR /app
 ```
 EXPOSE 80
 ```
-7.CMD
+7. CMD
 
 * Provides the default command to run when the container starts.
 * Example:
