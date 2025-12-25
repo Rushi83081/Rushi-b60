@@ -2,6 +2,7 @@
 
 Kubernetes (**K8s**) is an **open-source container orchestration platform** that automates the **deployment**, **scaling**, and **management** of containerized applications.
 
+* **container orchestration platform** :- automatically manages containers — it starts them, stops them, scales them, and fixes them if they fail.
 ---
 
 ## ⚙️ **Why Kubernetes?**
