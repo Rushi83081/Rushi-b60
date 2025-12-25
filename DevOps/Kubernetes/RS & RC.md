@@ -3,6 +3,7 @@
 ### 🚀 1. What is a ReplicationController (RC)?
 
 A **ReplicationController (RC)** ensures that a specified number of **pod replicas** are always running in Kubernetes.
+___
 
 ### ✔ Key Features
 - Ensures high availability  
