@@ -49,6 +49,21 @@
 6️⃣ **Destroy** → `terraform destroy` to remove resources.
 
 ---
+## 📊 Summary Table
+
+| File                  | Purpose         |
+| --------------------- | --------------- |
+| `main.tf`             | Resources       |
+| `variables.tf`        | Inputs          |
+| `outputs.tf`          | Outputs         |
+| `terraform.tfvars`    | Variable values |
+| `provider.tf`         | Provider config |
+| `backend.tf`          | Remote state    |
+| `locals.tf`           | Local values    |
+| `.terraform/`         | Plugins         |
+| `terraform.tfstate`   | Infra state     |
+| `.terraform.lock.hcl` | Provider lock   |
+
 
 ## 🗂️ **Terraform Project Structure**
 
