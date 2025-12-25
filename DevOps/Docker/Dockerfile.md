@@ -1,68 +1,71 @@
 ## 📘 Dockerfile
 
-**🔹 What is a Dockerfile?**
+## 📘 What is a Dockerfile?
 
-* A Dockerfile is a text document that contains a set of instructions used to build a Docker image.
-* It automates the process of creating images by defining the environment, dependencies, and commands needed to run an application inside a container.
+🔹 **Dockerfile** is a text document that contains a **set of instructions** used to build a Docker image.  
+🔹 It **automates image creation** by defining:
+- Environment
+- Dependencies
+- Commands to run an application inside a container
 
 ---
-### 🔹Components of a Dockerfile
+
+## 🧩 Components of a Dockerfile
 
 ---
 
-1. FROM
+### 🔹 1. `FROM`
+📌 Specifies the **base image** for the container.
 
-* Specifies the base image for the container.
-* Example:
-```
+```dockerfile
 FROM ubuntu:20.04
 ```
-2. MAINTAINER / LABEL
 
-* Defines metadata about the image creator.
-* Example:
+🔹 2. MAINTAINER / LABEL
+
+📌 Defines metadata about the image creator.
 ```
 LABEL maintainer="abhipraydh96@gmail.com"
 ```
-3. RUN
 
-* Executes commands inside the image while building.
-* Example:
+🔹 3. RUN
+
+📌 Executes commands during image build time.
 ```
 RUN apt-get update && apt-get install -y nginx
 ```
-4. COPY / ADD
 
-* Copies files from host machine to the image.
-* Example:
+🔹 4. COPY / ADD
+
+📌 Copies files from host machine → container image.
 ```
 COPY index.html /usr/share/nginx/html/
 ```
-5. WORKDIR
 
-* Sets the working directory inside the container.
-* Example:
+🔹 5. WORKDIR
+
+📌 Sets the working directory inside the container.
 ```
 WORKDIR /app
 ```
-6. EXPOSE
 
-* Defines the port number the container listens on.
-* Example:
+🔹 6. EXPOSE
+
+📌 Documents the port on which the container listens.
 ```
 EXPOSE 80
 ```
-7. CMD
 
-* Provides the default command to run when the container starts.
-* Example:
+🔹 7. CMD
+
+📌 Provides the default command to run when the container starts.
 ```
 CMD ["nginx", "-g", "daemon off;"]
 ```
-8. ENTRYPOINT
 
-*  Configures a container to run as an executable.
-*  Example:
+🔹 8. ENTRYPOINT
+
+📌 Configures the container to run as an executable.
 ```
 ENTRYPOINT ["nginx"]
 ```
