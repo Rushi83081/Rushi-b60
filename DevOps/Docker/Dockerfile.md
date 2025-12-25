@@ -20,6 +20,7 @@
 ```dockerfile
 FROM ubuntu:20.04
 ```
+---
 
 🔹 2. MAINTAINER / LABEL
 
