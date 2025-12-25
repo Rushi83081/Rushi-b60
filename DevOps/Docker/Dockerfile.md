@@ -61,8 +61,8 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 8. ENTRYPOINT
 
-* Configures a container to run as an executable.
-* Example:
+*  Configures a container to run as an executable.
+*  Example:
 ```
 ENTRYPOINT ["nginx"]
 ```
