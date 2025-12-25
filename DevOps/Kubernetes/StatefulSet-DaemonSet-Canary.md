@@ -112,8 +112,6 @@ kubectl delete statefulset web
 
 ## 🛰️ DaemonSet
 
-## 🧩 DaemonSet
-
 ### 📘 What is a DaemonSet?
 
 A **DaemonSet** ensures that **one copy of a Pod runs on every node**  
@@ -287,6 +285,8 @@ spec:
         - name: app
           image: my-app:v1
 ```
+
+### 🧾 Useful Canary Commands
 
 Check Deployments and Pods
 ```
