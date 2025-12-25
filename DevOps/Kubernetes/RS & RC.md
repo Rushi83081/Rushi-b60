@@ -1,6 +1,6 @@
-# 📘 Kubernetes — ReplicaSet (RS) & ReplicationController (RC)
+## 📘 Kubernetes — ReplicaSet (RS) & ReplicationController (RC)
 
-## 🚀 1. What is a ReplicationController (RC)?
+### 🚀 1. What is a ReplicationController (RC)?
 
 A **ReplicationController (RC)** ensures that a specified number of **pod replicas** are always running in Kubernetes.
 
