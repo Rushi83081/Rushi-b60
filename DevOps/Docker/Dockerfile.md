@@ -7,7 +7,8 @@
 
    ---
 🔹 Components of a Dockerfile
-``
+
+----------
 
 1. FROM
 
