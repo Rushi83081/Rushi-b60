@@ -1,3 +1,6 @@
+## 🗂️ **Terraform Project Structure**
+
+```
 📁 terraform/
 │── main.tf
 │── provider.tf
@@ -12,3 +15,4 @@
         ├── ec2.tf
         ├── variableEc2.tf
        
+```
