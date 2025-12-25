@@ -1,6 +1,6 @@
 # 🧩 Overview
 
-* **Docker** is a platform that enables developers to build, package, and run applications in containers — lightweight, portable environments that include everything needed for an app to run.
+* **Docker** is a platform that enables developers to build, package, and run applications in containers, which are lightweight and portable environments that include everything an application needs to run.
 
 # ⚙️ Why Docker?
 
