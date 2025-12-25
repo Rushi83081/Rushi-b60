@@ -1,4 +1,4 @@
-📘 Dockerfile
+## 📘 Dockerfile
 
 🔹 What is a Dockerfile?
 
@@ -6,7 +6,7 @@
 * It automates the process of creating images by defining the environment, dependencies, and commands needed to run an application inside a container.
 
    ---
-🔹 Components of a Dockerfile
+### 🔹Components of a Dockerfile
 
 ----------
 
