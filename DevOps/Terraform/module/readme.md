@@ -1,14 +1,14 @@
-```
-terraform/
-├── vpc/
-│   ├── vpc.tf
-│   ├── variable_vpc.tf
-│   └── output.tf
+📁 terraform/
+│── main.tf
+│── provider.tf
 │
-├── ec2/
-│   ├── ec2.tf
-│   └── variable.tf
-│
-├── main.tf
-└── provider.tf
-```
+└── modules/
+    ├── vpc/
+    │   ├── vpc.tf
+    │   ├── variableVpc.tf
+    │   └── output.tf
+    │
+    └── ec2/
+        ├── ec2.tf
+        ├── variableEc2.tf
+       
