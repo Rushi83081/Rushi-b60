@@ -52,6 +52,6 @@ docker exec -it <container_id_or_name> /bin/bash
 ```
 **7.Stop and remove containers**
 ```
-docker stop <container_id><br>
+docker stop <container_id>
 docker rm <container_id>
 ```
