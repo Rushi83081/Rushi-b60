@@ -43,35 +43,42 @@
 
 
 ## StatefulSet.yaml
-```
+
+```yaml
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-name: web
+  name: web
+
 spec:
-serviceName: "web"
-replicas: 3
-selector:
-matchLabels:
-app: web
-template:
-metadata:
-labels:
-app: web
-spec:
-containers:
-- name: web
-image: nginx
-ports:
-- containerPort: 80
-volumeClaimTemplates:
-- metadata:
-name: web-data
-spec:
-accessModes: ["ReadWriteOnce"]
-resources:
-requests:
-storage: 1Gi
+  serviceName: "web"
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: web
+
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: web
+          image: nginx
+          ports:
+            - containerPort: 80
+
+  volumeClaimTemplates:
+    - metadata:
+        name: web-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+
 ```
 
 ### 🧾 Useful StatefulSet Commands
