@@ -131,8 +131,21 @@ Secrets store **confidential and sensitive data** in **Base64 encoded** form.
 
 ---
 
+## 📘 Base64 Encoding & Decoding
+
+### Encode:
+```bash
+echo -n "admin123" | base64
+```
+
+### Decode:
+```bash
+echo -n "YWRtaW4xMjM=" | base64 --decode
+```
+
 ## 📘 Secret Commands
 
+---
 ### ➤ Create Secret (Literal)
 ```bash
 kubectl create secret generic db-secret --from-literal=username=admin --from-literal=password=pass123
@@ -156,20 +169,6 @@ kubectl describe secret db-secret
 ### ➤ Delete Secret
 ```bash
 kubectl delete secret db-secret
-```
-
----
-
-## 📘 Base64 Encoding & Decoding
-
-### Encode:
-```bash
-echo -n "admin123" | base64
-```
-
-### Decode:
-```bash
-echo -n "YWRtaW4xMjM=" | base64 --decode
 ```
 
 ---
