@@ -7,6 +7,8 @@
 
    ---
 🔹 Components of a Dockerfile
+``
+
 1. FROM
 
 * Specifies the base image for the container.
