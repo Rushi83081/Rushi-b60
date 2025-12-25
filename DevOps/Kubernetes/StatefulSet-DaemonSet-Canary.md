@@ -1,7 +1,4 @@
-# ⚙️ Advanced Kubernetes Workloads
-
-This section explains three important Kubernetes patterns: **StatefulSet**, **DaemonSet**, and **Canary Deployment**, with concepts and example commands.
-
+# ⚙️ Kubernetes Workloads
 ---
 
 ## 🧱 StatefulSet
