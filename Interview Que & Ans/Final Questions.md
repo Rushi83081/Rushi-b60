@@ -178,3 +178,117 @@
 
 7. Explain the concept of "statelessness" in AWS Lambda, and how can you manage application state when necessary?
 ```
+# Devops
+
+# Jenkins
+```
+1. What is Jenkins, and what is its primary purpose in the software development process?
+
+2. What are Jenkins pipelines, and why are they important?
+
+3. Describe the master-slave architecture in Jenkins and its advantages.
+
+4. Explain the role of Jenkins plugins and provide examples of popular plugins
+
+5. What is the purpose of Jenkins agents or nodes, and how do you configure them?
+
+6. Explain the concept of "Blue-Green Deployment" and how Jenkins can be used to implement it.
+
+7. How to troubleshoot Jenkins if any issues are encountered?
+```
+# Jenkins – Scenario Questions (Final)
+```
+1. You have a Java web application codebase hosted on GitHub. How would you set up a Jenkins job to build and deploy this application automatically whenever changes are pushed to the master branch?
+
+2. One of your Jenkins jobs failed during the build process, and you need to investigate the issue. Walk me through the steps you would take to identify the root cause of the failure and fix it.
+
+3. Your team uses Docker containers for application deployment. Explain how you would integrate Jenkins with Docker to automate the containerization and deployment of your applications.
+
+4. Your company is adopting Infrastructure as Code (IaC) using tools like Terraform. How can you incorporate Terraform scripts into your Jenkins pipeline to automate the provisioning of infrastructure alongside application deployment?
+```
+# Docker 
+```
+1. What is Docker, and how does it differ from traditional virtualization?
+
+2. Explain the key components of Docker's architecture.
+
+3. What is the difference between an image and a container in Docker?
+
+4. What is Docker Compose, and how does it simplify multi-container application orchestration?
+
+5. Explain the concept of Docker volumes and when you would use them.
+
+6. Entrypoint vs CMD?
+
+7. How to performance optimized lightweight Docker container?
+md
+```
+# Docker – Scenario Questions (Final)
+```
+1. Your Dockerized application relies on a database for persistence. Explain how you would manage data persistence and backups for the database in a containerized environment.
+
+2. Your organization is adopting a microservices architecture with multiple teams working on different services. How would you manage Docker image versioning and ensure smooth updates across all services while minimizing disruptions?
+
+3. You have been tasked with implementing a blue-green deployment strategy for a Dockerized application. Explain the steps involved in this process and how it ensures minimal downtime during updates.
+md
+```
+# Kubernetes
+```
+1. What is Kubernetes, and why is it important in the world of container orchestration?
+
+2. Explain the key components of Kubernetes and their roles in container management.
+
+3. Describe Kubernetes Deployments and StatefulSets. What are the differences, and when would you use one over the other?
+
+4. Explain the concept of Kubernetes Services and how they enable network connectivity for Pods.
+
+5. What is Kubernetes' role in auto-scaling, and how can you set up Horizontal Pod Autoscaling (HPA)?
+
+6. Explain Kubernetes rolling updates and canary deployments. When and why would you use each approach?
+
+7. What are Kubernetes ConfigMaps and Secrets, and how do they differ in terms of storing configuration data?
+```
+# Kubernetes – Scenario Questions (Final)
+```
+1. You are responsible for deploying a microservices-based application on Kubernetes. How would you design the architecture to ensure high availability, scalability, and fault tolerance for the application?
+
+2. Your team has developed a new version of an application that you need to roll out to a Kubernetes cluster without affecting the existing users. Describe the strategy and steps you would take to perform a zero-downtime deployment
+
+3. You have a stateful application, such as a database, running in Kubernetes. Explain how you would ensure data persistence and manage backups effectively.
+
+4. You have a stateless application with variable traffic patterns. How would you configure Horizontal Pod Autoscaling (HPA) to automatically scale the application based on resource utilization?
+```
+# Terraform 
+```
+1. What is Terraform, and how does it differ from other infrastructure-as-code (IaC) tools?
+
+2. Explain the core components of Terraform, such as providers, resources, and modules.
+
+3. What is Terraform's "state," and why is it critical to managing infrastructure? How can you manage remote state in Terraform?
+
+4. Explain the concept of "Terraform Modules" and their benefits in managing reusable infrastructure code.
+
+5. What are Terraform workspaces, and how can they be used to manage multiple environments (e.g., dev, staging, production)?
+
+6. Discuss the advantages of using remote backends, such as Amazon S3 or Azure Blob Storage, for Terraform state storage.
+```
+# Terraform – Scenario Questions (Final)
+```
+1. You are tasked with provisioning a web application stack consisting of multiple AWS resources, including EC2 instances, an RDS database, and an Elastic Load Balancer. How would you structure your Terraform configuration to create this infrastructure?
+
+2. Your team is adopting a multi-environment strategy (e.g., dev, staging, production) using Terraform workspaces. Explain how you would organize your Terraform code and workspaces to manage these environments efficiently.
+
+3. Your team is using a CI/CD pipeline for deploying Terraform configurations. Describe the pipeline's stages and how it ensures safe and efficient infrastructure changes.
+```
+# DevOps – Scenario Questions (Final)
+```
+1. Scenario: Your team is working on a web application, and you want to implement a continuous integration (CI) and continuous delivery (CD) pipeline. Describe the steps you would take to set up this pipeline from code commit to production deployment.
+
+2. Scenario: Your organization is adopting microservices architecture, and you need to design a strategy for deploying and orchestrating these services. Explain how you would implement containerization and orchestration using technologies like Docker and Kubernetes.
+
+3. Scenario: You are tasked with implementing a disaster recovery plan for your organization's critical services and infrastructure. Describe the steps you would take to ensure high availability and data redundancy.
+
+4. Scenario: You are responsible for securing your DevOps environment. Discuss the security best practices you would implement to protect your CI/CD pipeline, containers, and infrastructure.
+
+5. Scenario: You want to implement blue-green deployments for your applications. Describe how you would set up this deployment strategy, including the necessary infrastructure and processes.
+```
