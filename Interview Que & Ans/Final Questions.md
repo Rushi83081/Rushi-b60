@@ -178,7 +178,7 @@
 
 7. Explain the concept of "statelessness" in AWS Lambda, and how can you manage application state when necessary?
 ```
-# Devops
+# * Devops
 
 # Jenkins
 ```
