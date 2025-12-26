@@ -60,6 +60,91 @@ AWS categorizes EC2 instances into **families** based on their performance and u
 
 ---
 
+# EC2 Purchasing Options
+
+## 1. On-Demand Instances
+
+**Description:** Pay per second/hour with no long-term commitment.
+
+**Use Cases:**
+
+* Short-term workloads
+* Testing and development
+* Unpredictable traffic
+
+* No upfront cost
+* Highly flexible
+
+* Most expensive option
+
+---
+
+## 2. Reserved Instances (RI)
+
+**Description:** Commit to a 1-year or 3-year term for discounted pricing.
+
+**Types:**
+
+* Standard Reserved Instances
+* Convertible Reserved Instances
+
+**Use Cases:**
+
+* Steady-state applications
+  
+* Long-term production workloads
+
+* Up to ~72% cost savings compared to On-Demand
+
+* Long-term commitment required
+
+---
+
+## 3. Spot Instances
+
+**Description:** Use spare AWS capacity at very low cost. Instances can be interrupted with short notice.
+
+**Important:**
+
+* AWS can terminate instances with a 2-minute warning
+
+**Use Cases:**
+
+* Batch processing
+* Data analytics
+* CI/CD jobs
+
+* Cheapest option (up to ~90% discount)
+
+* Not suitable for critical or long-running workloads
+
+---
+
+## 4. Dedicated Host
+
+**Description:** A physical server dedicated to a single customer.
+
+**Use Cases:**
+
+* Compliance requirements
+* Bring Your Own License (BYOL)
+* Full control over physical hardware
+* Meets regulatory and licensing needs
+* Most expensive option
+
+---
+
+## Quick Comparison
+
+| Option         | Cost    | Commitment | Best For               |
+| -------------- | ------- | ---------- | ---------------------- |
+| On-Demand      | High    | None       | Short-term workloads   |
+| Reserved       | Medium  | 1–3 Years  | Long-term applications |
+| Spot           | Lowest  | None       | Fault-tolerant jobs    |
+| Dedicated Host | Highest | 1–3 Years  | Compliance & licensing |
+
+---
+
 ## 💾 **2. AMI (Amazon Machine Image)**
 
 An **AMI** is a **template** that defines the software configuration of your instance.  
