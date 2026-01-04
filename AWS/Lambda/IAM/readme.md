@@ -50,6 +50,8 @@
 
 * Controls Allow / Deny actions
 
+---
+
 ## 📄 AWS IAM Policy Types
 
 - AWS IAM policies define what actions are allowed or denied on AWS resources.
@@ -100,6 +102,8 @@ Permissions boundaries set the maximum permissions an IAM entity can have.
 - * Used with users or roles
 
 - * Common in large organizations
+
+---
 
 # Differences
 
