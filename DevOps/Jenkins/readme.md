@@ -1,7 +1,4 @@
-# 🚀 Jenkins CI/CD Pipeline Guide
-
-A clean and attractive Jenkins overview for your GitHub repository. You can modify it anytime!
-
+# 🚀 Jenkins CI/CD Pipeline 
 ---
 
 ## 🔧 **What is Jenkins?**
