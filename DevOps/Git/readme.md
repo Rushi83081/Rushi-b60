@@ -55,40 +55,40 @@
 
 # 🛠️ Basic Commands
 
-# Working Directory
+## Working Directory
 ```bash
 git status
 ```
-# Initialize repository
+## Initialize repository
 ```bash
 git init
 ```
-# Add file to staging 
+## Add file to staging 
 ```bash
 git add (filename)
 ```
-# Add all files
+## Add all files
 ```bash
 git add .
 ```
-# Commit changes
+## Commit changes
 ```bash
 git commit -m "Mesasge"
 ```
-# Create and switch branches
+## Create and switch branches
 ```bash
 git branch feature-xyz
 git checkout feature-xyz
 ```
-# Push to remote
+## Push to remote
 ```bash
 git push origin main
 ```
-# Pull latest changes
+## Pull latest changes
 ```bash
 git pull origin main
 ```
-# View log
+## View log
 ```bash
 git log --oneline
 ```
