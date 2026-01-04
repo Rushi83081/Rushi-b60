@@ -35,14 +35,14 @@
            ▼
 +---------------------+
 |    Staging Area     |
-|   (Index / Cache)  |
+|   (Index / Cache)   |
 +----------+----------+
            |
            | git commit
            ▼
 +---------------------+
 |  Local Repository   |
-|   (.git Directory) |
+|   (.git Directory)  |
 +----------+----------+
            |
            | git push
@@ -55,6 +55,10 @@
 
 # 🛠️ Basic Commands
 
+# Working Directory
+```bash
+git status
+```
 # Initialize repository
 ```bash
 git init
