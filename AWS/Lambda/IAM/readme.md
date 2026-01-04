@@ -50,7 +50,7 @@
 
 * Controls Allow / Deny actions
 
----
+____
 
 ## 📄 AWS IAM Policy Types
 
