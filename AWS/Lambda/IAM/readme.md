@@ -50,10 +50,10 @@
 
 * Controls Allow / Deny actions
 
-  📄 AWS IAM Policy Types
+## 📄 AWS IAM Policy Types
 
-AWS IAM policies define what actions are allowed or denied on AWS resources.
-Policies are written in JSON and are attached to users, groups, or roles.
+- AWS IAM policies define what actions are allowed or denied on AWS resources.
+- Policies are written in JSON and are attached to users, groups, or roles.
 
 ## 🧱 Types of IAM Policies
 
@@ -63,7 +63,7 @@ AWS IAM supports three main policy types:
 
 - Managed policies are standalone policies that can be attached to multiple IAM identities.
 
-🔹 Characteristics
+### 🔹 Characteristics
 
 - * Created and managed separately
 
@@ -81,7 +81,7 @@ AWS IAM supports three main policy types:
 
 Inline policies are directly embedded into a single user, group, or role.
 
-🔹 Characteristics
+### 🔹 Characteristics
 
 - * Tightly coupled to one identity
 
@@ -93,7 +93,7 @@ Inline policies are directly embedded into a single user, group, or role.
 
 Permissions boundaries set the maximum permissions an IAM entity can have.
 
-🔹 Characteristics
+### 🔹 Characteristics
 
 - * Acts as a permission limit
 
@@ -101,7 +101,7 @@ Permissions boundaries set the maximum permissions an IAM entity can have.
 
 - * Common in large organizations
 
-## Differences
+# Differences
 
 ## 🔁 IAM USERS vs GROUPS vs ROLES
 
