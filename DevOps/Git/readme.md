@@ -24,6 +24,35 @@
 | **Merge**             | Combines changes from branches.           |
 | **Remote**            | A repository hosted online (like GitHub). |
 
+## Git Architecture
+
++---------------------+
+|  Working Directory  |
+|  (Your Project)     |
++----------+----------+
+           |
+           | git add
+           ▼
++---------------------+
+|    Staging Area     |
+|   (Index / Cache)  |
++----------+----------+
+           |
+           | git commit
+           ▼
++---------------------+
+|  Local Repository   |
+|   (.git Directory) |
++----------+----------+
+           |
+           | git push
+           ▼
++---------------------+
+|  Remote Repository  |
+| (GitHub / GitLab)   |
++---------------------+
+
+
 # 🛠️ Basic Commands
 
 # Initialize repository
