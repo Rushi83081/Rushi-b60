@@ -14,7 +14,7 @@
 
 * Avoid sharing root account
 
-  ---
+___
 
 ## 🧱 IAM Core Components
 
