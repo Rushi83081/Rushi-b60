@@ -25,7 +25,7 @@ ___
 * Has username + password / access keys
 
 * Used for long-term access
-
+---
 ### 2️⃣ IAM Groups
 
 * Collection of IAM users
@@ -33,7 +33,7 @@ ___
 * Permissions are assigned to group
 
 * Users inherit group permissions
-
+---
 ### 3️⃣ IAM Roles
 
 * Used to grant temporary permissions
@@ -41,7 +41,7 @@ ___
 * No username or password
 
 * Commonly used with EC2, Lambda, EKS
-
+---
 ### 4️⃣ IAM Policies
 
 * JSON document that defines permissions
@@ -78,7 +78,7 @@ AWS IAM supports three main policy types:
 - * AWS Managed Policies – Created by AWS
 
 - * Customer Managed Policies – Created by users
-
+---
 ### 2️⃣ Inline Policies
 
 Inline policies are directly embedded into a single user, group, or role.
@@ -90,7 +90,7 @@ Inline policies are directly embedded into a single user, group, or role.
 - * Cannot be reused
 
 - * Deleted automatically when identity is deleted
-
+---
 ### 3️⃣ Permissions Boundary (Advanced)
 
 Permissions boundaries set the maximum permissions an IAM entity can have.
