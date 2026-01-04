@@ -25,7 +25,7 @@
 | **Remote**            | A repository hosted online (like GitHub). |
 
 ## Git Architecture
-
+```
 +---------------------+
 |  Working Directory  |
 |  (Your Project)     |
@@ -51,7 +51,7 @@
 |  Remote Repository  |
 | (GitHub / GitLab)   |
 +---------------------+
-
+```
 
 # 🛠️ Basic Commands
 
