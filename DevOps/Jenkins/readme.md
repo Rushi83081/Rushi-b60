@@ -33,6 +33,16 @@ Simple graphical jobs for basic automation.
 
 Code-based automation using a **Jenkinsfile**.
 
+## 🔁 Jenkins Freestyle Project vs Pipeline Project
+
+| Freestyle Project                                 | Pipeline Project                                          |
+| ------------------------------------------------- | --------------------------------------------------------- |
+| Configured using the Jenkins **Web UI**           | Defined using a **Jenkinsfile (code)**                    |
+| Suitable for **simple and linear** build jobs     | Designed for **complex, multi-stage** CI/CD pipelines     |
+| Job configuration is **not version controlled**   | Pipeline code is **stored and versioned in Git**          |
+| Limited support for error handling and automation | Supports **advanced logic, parallel stages, and retries** |
+| Best for **small or legacy projects**             | Best for **production and enterprise CI/CD**              |
+
 ---
 
 ## 📝 **Sample Jenkinsfile**
