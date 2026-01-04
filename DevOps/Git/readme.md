@@ -30,7 +30,11 @@
 ```bash
 git init
 ```
-# Add files
+# Add file to staging 
+```bash
+git add (filename)
+```
+# Add all files
 ```bash
 git add .
 ```
