@@ -64,6 +64,7 @@ Common shells available in Linux/Unix:
 #!/bin/sh
 ```
 
+
 ## 📌 6. Create Your First Shell Script 🚀 
 
 ### ✏️ Step 1: Create a Script File (In LabEx)
@@ -82,6 +83,8 @@ echo "Hello World"
 * #!/bin/bash → Shebang line (defines interpreter)
 
 * echo → Used to print output on the terminal
+___
+
 
 ## 📌 7. Give Execute Permission 🔐
 
@@ -98,7 +101,8 @@ chmod 700 1.sh
 * u+x → Adds execute permission to the user
 ___
 
-##📌 8. Run the Script ▶️
+
+## 📌 8. Run the Script ▶️
 
 ### ▶️ Method 1: Direct Execution
 ```
@@ -122,6 +126,8 @@ bash 1.sh
 * Does not require execute permission
 
 * Is commonly used for testing or checking scripts
+___
+
 
 ## 📌 9. Output Example 📤
 ```
