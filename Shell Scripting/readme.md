@@ -64,13 +64,14 @@ Common shells available in Linux/Unix:
 #!/bin/sh
 ```
 
-## 📌 6. Create Your First Shell Script 🚀
+## 📌 6. Create Your First Shell Script 🚀 
 
-### ✏️ Step 1: Create a Script File
+### ✏️ Step 1: Create a Script File (In LabEx)
 ```bash
 vim 1.sh
 ```
 🔔 Note: The .sh extension is not mandatory, but it is recommended for clarity.
+___
 
 ### ✏️ Step 2: Write the Script
 ```
