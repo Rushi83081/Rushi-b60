@@ -63,6 +63,24 @@ Common shells available in Linux/Unix:
 #!/bin/bash
 #!/bin/sh
 ```
+---
+
+## 🔍 Why Shebang is Used?
+
+Instructs the OS to use a specific command interpreter.
+
+Decides which shell will execute the script.
+
+📝 Important Points
+
+* # → Sharp
+
+* ! → Bang
+
+* #! → Shebang
+
+* Name comes from musical notation
+___
 
 
 ## 📌 6. Create Your First Shell Script 🚀 
