@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 1. Terminal vs Shell
+## 📌 1. Terminal vs Shell (IMP)
 
 ### 🖥️ Terminal
 - A **Terminal** is a **text-based interface**.
@@ -19,7 +19,7 @@
 
 ---
 
-## 📌 2. Types of Shell 🐧
+## 📌 2. Types of Shell 🐧 (IMP)
 
 Common shells available in Linux/Unix:
 
@@ -39,7 +39,7 @@ Common shells available in Linux/Unix:
 
 ---
 
-## 📌 4. Shell Scripting ✍️
+## 📌 4. Shell Scripting ✍️ (IMP)
 
 - **Shell scripting** means writing commands in a file.
 - These scripts are executed by a shell.
