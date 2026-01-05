@@ -73,11 +73,11 @@ Decides which shell will execute the script.
 
 📝 Important Points
 
-* # → Sharp
+* '#' → Sharp
 
-* ! → Bang
+* '!' → Bang
 
-* #! → Shebang
+* '#!' → Shebang
 
 * Name comes from musical notation
 ___
