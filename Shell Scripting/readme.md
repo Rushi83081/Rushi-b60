@@ -96,9 +96,11 @@ chmod 700 1.sh
 * chmod → Change mode (permission)
 
 * u+x → Adds execute permission to the user
+___
 
-📌 8. Run the Script ▶️
-▶️ Method 1: Direct Execution
+##📌 8. Run the Script ▶️
+
+### ▶️ Method 1: Direct Execution
 ```
 ./1.sh
 ```
@@ -108,8 +110,9 @@ chmod 700 1.sh
 * You must be in the same directory
 
 * Script must have execute permission
+___
 
-▶️ Method 2: Using Bash
+### ▶️ Method 2: Using Bash
 ```
 bash 1.sh
 ```
@@ -120,7 +123,7 @@ bash 1.sh
 
 * Is commonly used for testing or checking scripts
 
-📌 10. Output Example 📤
+## 📌 9. Output Example 📤
 ```
 Hello World
 ```
