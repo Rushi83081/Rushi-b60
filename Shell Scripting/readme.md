@@ -67,11 +67,11 @@ Common shells available in Linux/Unix:
 
 ## 🔍 Why Shebang is Used?
 
-Instructs the OS to use a specific command interpreter.
+* Instructs the OS to use a specific command interpreter.
 
-Decides which shell will execute the script.
+* Decides which shell will execute the script.
 
-📝 Important Points
+### 📝 Important Points
 
 * '#' → Sharp
 
