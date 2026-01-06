@@ -20,7 +20,6 @@
 9. Describe the process of setting up cross-account access in AWS IAM.
 
 10. How do you rotate access keys for IAM users, and why is key rotation important?
-
 ```
 
 # S3
@@ -55,7 +54,6 @@
 
 15. Discuss the advantages and considerations of using Amazon S3 as a content delivery solution (S3 as a static website host or through Amazon
 CloudFront).
-
 ```
 
 # EC2 
