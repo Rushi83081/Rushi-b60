@@ -151,3 +151,36 @@ ___
 ```
 Hello World
 ```
+
+# Control Structures in Shell Script
+
+## Types
+
+  **1. Conditional Statements (if, if-else, elif)**
+
+  **2. Loops (for, while, until)**
+
+## Conditional Statements
+
+### Description
+
+- Conditional statements are used for decision making.
+
+### if-else Syntax
+```
+if [ condition ]
+then
+    commands
+else
+    commands
+fi
+```
+## File & Directory Test Conditions
+
+**Option**	   **Description**
+  -f	      File exists and is a regular file
+  -d	      Directory exists
+  -r	      File has read permission
+  -w	      File has write permission
+  -x	      File has execute permission
+  -s	      File exists and is not empty
