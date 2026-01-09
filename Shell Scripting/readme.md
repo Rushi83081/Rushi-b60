@@ -175,12 +175,34 @@ else
     commands
 fi
 ```
-## File & Directory Test Conditions
+## 1.File & Directory Test Conditions
 
-**Option**	   **Description**
-  -f	      File exists and is a regular file
-  -d	      Directory exists
-  -r	      File has read permission
-  -w	      File has write permission
-  -x	      File has execute permission
-  -s	      File exists and is not empty
+| Operator | Description                       |
+| -------- | --------------------------------- |
+| `-f`     | File exists and is a regular file |
+| `-d`     | Directory exists                  |
+| `-r`     | File has read permission          |
+| `-w`     | File has write permission         |
+| `-x`     | File has execute permission       |
+| `-s`     | File exists and is not empty      |
+
+## 2.String Comparison Operators
+
+| Operator | Description           |
+| -------- | --------------------- |
+| `=`      | Strings are equal     |
+| `!=`     | Strings are not equal |
+| `-z`     | String is empty       |
+| `-n`     | String is not empty   |
+
+## 3.Numerical Comparison Operators
+
+| Operator | Description              |
+| -------- | ------------------------ |
+| `-eq`    | Equal to                 |
+| `-ne`    | Not equal to             |
+| `-gt`    | Greater than             |
+| `-ge`    | Greater than or equal to |
+| `-lt`    | Less than                |
+| `-le`    | Less than or equal to    |
+
