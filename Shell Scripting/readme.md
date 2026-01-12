@@ -213,11 +213,11 @@ fi
 
 ## Types of Loops
 
-### 1. for loop
+- ### for loop
 
-### 2. while loop
+- ### while loop
 
-### 3. until loop
+- ### until loop
 
 ## 1. for Loop
 
