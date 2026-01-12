@@ -206,3 +206,29 @@ fi
 | `-lt`    | Less than                |
 | `-le`    | Less than or equal to    |
 
+## Loops in Shell Script
+**What is a Loop?**
+
+- A loop is used to repeat a task multiple times without writing the same code again.
+
+## Types of Loops
+
+### 1. for loop
+
+### 2. while loop
+
+### 3. until loop
+
+## 1. for Loop
+
+**Description**
+
+- A for loop runs a block of code for each value in a list or range.
+
+Syntax
+```
+for variable in list
+ do
+   commands
+ done
+```
