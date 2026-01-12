@@ -225,9 +225,35 @@ fi
 
 - A for loop runs a block of code for each value in a list or range.
 
-Syntax
+### Syntax
 ```
 for variable in list
+ do
+   commands
+ done
+```
+
+## 2. while Loop
+**Description**
+
+- A while loop executes code as long as the condition remains true.
+
+### Syntax
+```
+while [ condition ]
+ do
+   commands
+ done
+```
+
+## 3. until Loop
+**Description**
+
+- An until loop runs until the condition becomes true (opposite of while loop).
+
+### Syntax
+```
+until [ condition ]
  do
    commands
  done
