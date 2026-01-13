@@ -258,3 +258,88 @@ until [ condition ]
    commands
  done
 ```
+
+# Functions in Shell Script
+
+## What is a Function?
+
+- A function is a block of code written once and used multiple times.
+
+- It performs a specific task and runs only when it is called.
+
+- Functions make scripts clean, organized, and easy to debug.
+
+- We can pass arguments to functions.
+
+## Function Syntax
+- **Method 1**
+```
+myfunction() {
+    # code
+}
+```
+
+- **Method 2**
+```
+function function_name {
+    # code
+}
+```
+---
+## Arithmetic Operations in Shell
+
+  - '$(( ))' is used to perform arithmetic operations in shell scripting.
+
+  - Shell functions do not return values like Python or Java.
+
+  - Use echo to print output or return to send exit codes only.
+
+### Exit Codes
+
+  - Range: 0–255
+
+  - 0 → Success
+
+  - Non-zero → Failure
+---
+
+## Debugging in Shell Script
+
+### What is Debugging?
+
+- Debugging means identifying and fixing errors in a shell script.
+
+### Why Debugging is Needed?
+
+  - To find where the script fails
+
+  - To check script execution flow
+
+  - To know values stored in variables
+
+### 1. set -x (Debug Mode)
+```
+set -x
+```
+* Prints each command before execution
+
+* Helps understand script flow and variable values
+
+* Usually added at the beginning of the script
+---
+### 2. set -e (Exit on Error)
+```
+set -e
+```
+* Script immediately exits if any command fails
+
+* Prevents script from running in an error state
+---
+### 11. Using set -xe
+```
+set -xe
+```
+  - -x → Shows command execution flow
+
+  - -e → Stops script on error
+    
