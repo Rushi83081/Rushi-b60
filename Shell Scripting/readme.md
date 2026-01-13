@@ -30,9 +30,13 @@
 Common shells available in Linux/Unix:
 
 🔹 sh – Bourne Shell
+
 🔹 bash – Bourne Again Shell (Most Popular)
+
 🔹 zsh – Z Shell
+
 🔹 ksh – Korn Shell
+
 🔹 csh – C Shell
 
 ---
