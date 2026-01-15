@@ -389,3 +389,74 @@ set -xe
 * `-e` → Stops script on error
 
 ---
+# 🐚 Case and Select Statements
+
+---
+
+## ⭐ Case and Select Statements
+
+---
+
+## 📌 1) Case Statement
+
+* Case is also control structure just like switch statement in other languages.
+* Case is used when you want to match one value against many option.
+
+---
+
+### 🧾 Syntax
+
+```bash
+case <variable> in
+pattern1)
+    command
+    ;;
+pattern2)
+    command
+    ;;
+*)
+    default command
+    ;;
+esac
+```
+
+---
+
+### 📖 Meaning of Keywords
+
+* `<variable>` = value you are testing
+* `pattern1 , pattern2` = matching pattern
+* `;;` = end of case
+* `*` = default case
+* `esac` = is case spelled backward, it ends the case
+
+---
+
+## 📌 2) Select Statement
+
+* Used to create menus automatically.
+* User selects an option by number.
+
+---
+
+### 🧾 Syntax
+
+```bash
+select variable in option1 option2 option3
+do
+    commands
+done
+```
+
+---
+
+### 📝 Important Points
+
+* To break the loop use exit or break statement.
+* `#?` is the default prompt of the select statement.
+* You can remove or change it using `PS3`.
+* `PS3` is a variable used by the select statement.
+* It shows what message is shown when a select menu asks for input.
+* `PS3` stands for Prompt String.
+
+---
