@@ -1,30 +1,27 @@
-```
-Good morning and thank you for the opportunity  
+Good morning and thank you for the opportunity
 My name is **Rushikesh Gaikwad** and I have completed my **BCA** from **Bharati Vidyapeeth Sangli**
 
-Currently I am working as a **DevOps Intern at Hisan Labs Pvt Ltd** for the last **six months** and before that
-I pursued a **DevOps course at CloudBlitz Pune**
+Currently I am working as a **DevOps Intern at Hisan Labs Pvt Ltd** for the last six months and before that I pursued a DevOps course at **CloudBlitz Pune**.
 
-I work regularly with **Linux based systems** where I handle **file and directory management**, **user and permission control**, **process monitoring**, **log analysis**, and **basic shell scripting** for **automation and troubleshooting**
+I work regularly with Linux based systems where I handle file and directory management user and permission control process monitoring log analysis and basic shell scripting for automation and troubleshooting
 
-From a cloud perspective I have hands on experience working with **AWS services** including **EC2**, **VPC**, **IAM**, **S3**, **EBS**, **EFS**, **RDS**, **Route53**, **CloudFront**, and **EKS**, focusing on **secure**, **scalable**, and **highly available infrastructure**
+From a cloud perspective I have hands on experience working with AWS services including compute networking storage and database components focusing on secure scalable and highly available infrastructure
 
-For automation and delivery workflows I follow **version control** and **CI CD practices** using **Git** and **Jenkins** to automate **build**, **test**, and **deployment processes** and ensure **smooth application releases**
+For automation and delivery workflows I use version control and CI CD practices to automate build test and deployment processes and ensure smooth application releases
 
-I work with **containerization** using **Docker** to **build**, **manage**, and **deploy application images** consistently across multiple environments
+I work with containerization to build and manage application images and deploy them consistently across multiple environments
 
-I manage containerized applications using **Kubernetes** where I handle **deployments**, **rolling updates**, **autoscaling**, **health checks**, and **basic cluster troubleshooting**
+I manage containerized applications using orchestration platforms where I handle deployments rolling updates autoscaling health checks and basic cluster troubleshooting
 
-I follow **safe release practices** such as **rolling deployments** and **blue green deployments** to reduce **downtime** and support **quick rollback** when required
+I follow safe release practices such as rolling and blue green deployments to reduce downtime and support quick rollback when required
 
-For **monitoring and observability** I track **system health**, **application performance**, **logs**, and **alerts** using **Grafana** and **Datadog** to support **proactive issue detection** and **faster resolution**
+For monitoring and observability I track system health application performance logs and alerts to support proactive issue detection and faster resolution
 
-I have worked on multiple **hands on projects** including **3 Tier Architecture deployment**, **Kubernetes based application deployments**, **production style clone projects** such as **Netflix**, **Amazon**, and **Myntra**, **Super Mario deployment**, and **Angular application deployment on Kubernetes**
+I have worked on multiple hands on projects including 3 Tier Architecture deployment Kubernetes based application deployments production style clone projects and frontend application deployments
 
-Overall my experience includes **cloud infrastructure automation**, **continuous delivery**, **containerized deployments**, **monitoring**, and **operational best practices**, and I am eager to contribute to **reliable**, **secure**, and **scalable DevOps environments**
+Overall my experience includes cloud infrastructure automation continuous delivery containerized deployments monitoring and operational best practices and I am eager to contribute to reliable secure and scalable DevOps environments
 
 Thank you
-```
 ---------------------------------------------------------------------------------------------------------------------
 
 # 🌟 Medium Version (Best)
