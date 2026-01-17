@@ -2,7 +2,8 @@
 Good morning and thank you for the opportunity  
 My name is **Rushikesh Gaikwad** and I have completed my **BCA** from **Bharati Vidyapeeth Sangli**
 
-Currently I am working as a **DevOps Intern at Hisan Labs Pvt Ltd** for the last **six months** and before that I pursued a **three month DevOps course at CloudBlitz Pune**
+Currently I am working as a **DevOps Intern at Hisan Labs Pvt Ltd** for the last **six months** and before that
+I pursued a **DevOps course at CloudBlitz Pune**
 
 I work regularly with **Linux based systems** where I handle **file and directory management**, **user and permission control**, **process monitoring**, **log analysis**, and **basic shell scripting** for **automation and troubleshooting**
 
