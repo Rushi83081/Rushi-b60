@@ -1,13 +1,29 @@
-# 🌟 Short Version (40–60 Seconds)
+```
+Good morning and thank you for the opportunity  
+My name is **Rushikesh Gaikwad** and I have completed my **BCA** from **Bharati Vidyapeeth Sangli**
 
-Hello, my name is **Rushikesh Gaikwad**. I have completed my **BCA** from Bharati Vidyapeeth, Sangli, and I am currently pursuing a DevOps course at CloudBlitz, Pune. During my training, I worked on hands-on projects such as **3-tier architecture, Netflix clone, Amazon clone, Myntra clone, and Super Mario deployment**.
+Currently I am working as a **DevOps Intern at Hisan Labs Pvt Ltd** for the last **six months** and before that I pursued a **three month DevOps course at CloudBlitz Pune**
 
-In Linux, I worked on **file and directory management**, **user and group management**, **permissions**, **Vim editor**, and **package management** for installing and updating services.
+I work regularly with **Linux based systems** where I handle **file and directory management**, **user and permission control**, **process monitoring**, **log analysis**, and **basic shell scripting** for **automation and troubleshooting**
 
-In AWS, I used **EC2** to launch servers, **VPC** to create isolated networks, **EBS, EFS, and S3** for storage, **RDS** for database management, **Route 53** for DNS services, and **CloudWatch** for monitoring.
+From a cloud perspective I have hands on experience working with **AWS services** including **EC2**, **VPC**, **IAM**, **S3**, **EBS**, **EFS**, **RDS**, **Route53**, **CloudFront**, and **EKS**, focusing on **secure**, **scalable**, and **highly available infrastructure**
 
-In DevOps, I worked with **Git** for version control, **Docker** for containerization, **Kubernetes** for container orchestration, **Terraform** for infrastructure automation, **Jenkins** for CI/CD pipeline automation, and **Datadog and Grafana** for monitoring. Thank you.
+For automation and delivery workflows I follow **version control** and **CI CD practices** using **Git** and **Jenkins** to automate **build**, **test**, and **deployment processes** and ensure **smooth application releases**
 
+I work with **containerization** using **Docker** to **build**, **manage**, and **deploy application images** consistently across multiple environments
+
+I manage containerized applications using **Kubernetes** where I handle **deployments**, **rolling updates**, **autoscaling**, **health checks**, and **basic cluster troubleshooting**
+
+I follow **safe release practices** such as **rolling deployments** and **blue green deployments** to reduce **downtime** and support **quick rollback** when required
+
+For **monitoring and observability** I track **system health**, **application performance**, **logs**, and **alerts** using **Grafana** and **Datadog** to support **proactive issue detection** and **faster resolution**
+
+I have worked on multiple **hands on projects** including **3 Tier Architecture deployment**, **Kubernetes based application deployments**, **production style clone projects** such as **Netflix**, **Amazon**, and **Myntra**, **Super Mario deployment**, and **Angular application deployment on Kubernetes**
+
+Overall my experience includes **cloud infrastructure automation**, **continuous delivery**, **containerized deployments**, **monitoring**, and **operational best practices**, and I am eager to contribute to **reliable**, **secure**, and **scalable DevOps environments**
+
+Thank you
+```
 ---------------------------------------------------------------------------------------------------------------------
 
 # 🌟 Medium Version (Best)
