@@ -1,16 +1,27 @@
 Good morning and thank you for the opportunity  
 My name is Rushikesh Gaikwad and I have completed my BCA from Bharati Vidyapeeth Sangli
+
 Currently I am working as a DevOps Intern at Hisan Labs Pvt Ltd for the last six months and before that I pursued a three month DevOps course at CloudBlitz Pune
+
 I work regularly with Linux based systems where I handle file and directory management, user management, group management, permissions, process monitoring, log analysis, and shell scripting for automation and troubleshooting
+
 From a cloud perspective I have hands on experience with AWS including EC2, VPC, IAM, S3, EBS, EFS, RDS, Route53, CloudFront, and EKS, focusing on secure, scalable, and highly available infrastructure
+
 For automation and delivery workflows I follow version control and CI CD practices using Git and Jenkins to automate build, test, and deployment pipelines and ensure reliable application releases
+
 I work with containerization using Docker to build, tag, and manage container images and deploy them consistently across multiple environments
+
 I manage containerized applications using Kubernetes where I handle deployments, rolling updates, autoscaling, health checks, and cluster troubleshooting
+
 I follow deployment strategies such as rolling deployments and blue green deployments to achieve zero or minimal downtime and support quick rollback when required
 For monitoring and observability I track system health, application performance, logs, and alerts using Grafana and Datadog for proactive issue detection and faster incident resolution
+
 I have worked on hands on projects including 3 Tier Architecture deployment, Kubernetes based application deployments, Netflix, Amazon, and Myntra clone projects, Super Mario deployment, and Angular application deployment on Kubernetes
+
 Overall my experience includes cloud infrastructure automation, continuous integration, continuous delivery, container orchestration, monitoring, and DevOps best practices, and I am eager to contribute to reliable, secure, and scalable DevOps environments
+
 Thank you
+
 ---------------------------------------------------------------------------------------------------------------------
 
 # 🌟 Medium Version (Best)
