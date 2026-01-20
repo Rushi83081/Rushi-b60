@@ -1,5 +1,5 @@
 Good morning and thank you for the **opportunity**  
-My name is **Rushikesh Gaikwad** and I have completed my **BCA** from **Bharati Vidyapeeth Sangli**
+My name is **Rushikesh Gaikwad** and I have completed my **BCA** from **Bharati Vidyapeeth IMRDA Sangli**
 
 Currently I am working as a **DevOps Intern** at **Hisan Labs Pvt Ltd** and before that I pursued a **three month DevOps course** at **CloudBlitz Pune**
 
