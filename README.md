@@ -7,10 +7,8 @@ I work regularly with **Linux based systems** where I handle **file and director
 
 From a cloud perspective I have **hands on experience** with **AWS** including **EC2**, **VPC**, **IAM**, **S3**, **EBS**, **EFS**, **RDS**, **Route53**, **CloudFront**, and **EKS**, focusing on **secure**, **scalable**, and **highly available infrastructure**
 
-For **automation** and **delivery workflows** I follow **version control** and **CI CD practices** using **Git** and **Jenkins** to automate **build**, **test**, and **deployment pipelines** and ensure **reliable application releases**
-
+For **automation** and **delivery workflows** I Follow **version control** and **CI/CD** practices using **Git** and **Jenkins** to automate build, test, and deployment pipelines for reliable application releases.
 I work with **containerization** using **Docker** to **build**, **tag**, and **manage container images** and deploy them consistently across **multiple environments**
-
 I manage **containerized applications** using **Kubernetes** where I handle **deployments**, **rolling updates**, **autoscaling**, **health checks**, and **cluster troubleshooting**
 
 I follow **deployment strategies** such as **rolling deployments** and **blue green deployments** to achieve **zero or minimal downtime** and support **quick rollback** when required  
