@@ -1,4 +1,4 @@
-# 1.No Infrastructure Redundancy Required
+## 1. No Infrastructure Redundancy Required
 
 In this setup, no infrastructure redundancy is required.
 
@@ -11,7 +11,7 @@ In this setup, no infrastructure redundancy is required.
 
 ---
 
-# 2.Availability Zone
+## 2. Availability Zone
 
 Availability Zone places VMs in **different physical zones**.
 
@@ -22,7 +22,7 @@ Availability Zone places VMs in **different physical zones**.
 
 ---
 
-# 3.Availability Set
+## 3. Availability Set
 
 Availability Set ensures your VMs are placed on **different racks** in the same data center.
 
@@ -33,3 +33,12 @@ Availability Set ensures your VMs are placed on **different racks** in the same 
 
 ---
 
+# 4. VM Scale Set (Auto Scaling)
+
+VM Scale Set is used for automatic scaling of Virtual Machines.
+
+- Automatically increases or decreases VM count.
+- Scaling is based on traffic or load.
+- Used for high-traffic applications.
+- Works like **Auto Scaling in AWS**.
+- Commonly used for large websites.
