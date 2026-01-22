@@ -1,334 +1,228 @@
-## AWS – **Top 50 Important Questions & Answers**
-
-
-## 1. **What is virtualization and why is it important in cloud computing?**
-
-👉 **Virtualization** allows multiple **virtual machines (VMs)** to run on a single physical server. It improves **hardware utilization**, **workload isolation**, and enables **scalability and flexibility** in cloud environments.
+# 🚀 EC2 & EBS – Important Interview Questions and Answers
 
 ---
 
-## 2. **Differentiate IaaS, PaaS, and SaaS with examples.**
-
-👉
-
-* **IaaS (Infrastructure as a Service)**: EC2, EBS, VPC
-* **PaaS (Platform as a Service)**: Elastic Beanstalk
-* **SaaS (Software as a Service)**: Gmail, Salesforce
+## 1. **What is an EC2 instance type, and how do you choose the right one for your application?**
+👉 An **EC2 instance type** defines the **CPU, memory, storage, and networking capacity**. Choose it based on workload needs such as **general purpose**, **compute-optimized**, **memory-optimized**, or **storage-optimized** instances.
 
 ---
 
-## 3. **Explain AWS Regions and Availability Zones (AZs).**
-
-👉 A **Region** is a **geographical location**, and an **Availability Zone (AZ)** is an **isolated data center** within a region. Using multiple AZs provides **high availability** and **fault tolerance**.
-
----
-
-## 4. **What is an EC2 instance type and how do you choose one?**
-
-👉 An **EC2 instance type** defines **CPU, memory, storage, and networking capacity**. Choose it based on workload needs such as **general purpose**, **compute-optimized**, or **memory-optimized**.
+## 2. **What is an EC2 instance family, and when would you use one family over another?**
+👉 An **instance family** groups similar instance types optimized for workloads:  
+- **T / M** → General purpose  
+- **C** → Compute-intensive  
+- **R / X** → Memory-intensive  
+- **I / D** → Storage-intensive  
 
 ---
 
-## 5. **What is an EC2 instance family?**
-
-👉 An **instance family** groups similar instance types (e.g., **T, M, C**). Each family is optimized for specific workloads like **general**, **compute-intensive**, or **memory-intensive** applications.
-
----
-
-## 6. **Describe the steps to launch an EC2 instance.**
-
-👉 **Choose AMI → Select instance type → Configure network & storage → Configure security group → Create key pair → Launch instance**.
+## 3. **Describe the typical steps involved in launching an EC2 instance.**
+👉 Select **AMI → Choose instance type → Configure network → Add storage → Configure security group → Create key pair → Launch instance**.
 
 ---
 
-## 7. **What is EC2 user data?**
-
-👉 **User data** is a script that runs at instance launch to **automate tasks** such as installing software, configuring services, or starting applications.
-
----
-
-## 8. **What is EC2 instance metadata?**
-
-👉 **Instance metadata** provides information like **instance ID, private IP, AMI ID** and can be accessed from inside the instance using:
-`http://169.254.169.254`
+## 4. **What is an EC2 user data script, and how can it be used during instance launch?**
+👉 **User data** is a script that runs at first boot to **install software, configure services, and automate setup tasks**.
 
 ---
 
-## 9. **What is an AMI and why is it used?**
-
-👉 An **Amazon Machine Image (AMI)** is a template containing the **OS, software, and configuration**, used to launch EC2 instances quickly and consistently.
-
----
-
-## 10. **Difference between AMI and Snapshot.**
-
-👉
-
-* **AMI**: Used to launch EC2 instances
-* **Snapshot**: Backup of an **EBS volume** stored in S3
+## 5. **Explain the purpose of EC2 instance metadata and how you can access it from within an instance.**
+👉 **Instance metadata** provides information like **instance ID, IP address, AMI ID**, accessed using  
+`http://169.254.169.254` from inside the instance.
 
 ---
 
-## 11. **What are Security Groups?**
-
-👉 **Security Groups** act as **virtual firewalls** at the instance level. They are **stateful** and control **inbound and outbound traffic**.
-
----
-
-## 12. **Difference between Security Group and NACL.**
-
-👉
-
-* **Security Group**: Instance-level, **stateful**, allow rules only
-* **NACL**: Subnet-level, **stateless**, allow and deny rules
+## 6. **How can you create custom AMIs, and why might you want to do so?**
+👉 Create an AMI from a configured instance to **reuse configurations, reduce launch time, and ensure consistency** across environments.
 
 ---
 
-## 13. **Difference between public and private subnet.**
-
-👉 A **public subnet** has a route to an **Internet Gateway**, while a **private subnet** does not and usually accesses the internet through a **NAT Gateway**.
-
----
-
-## 14. **Why should databases be placed in a private subnet?**
-
-👉 For **security reasons**. Private subnets prevent direct internet access and allow controlled access only from application servers.
+## 7. **What are security groups, and how do they control inbound and outbound traffic to EC2 instances?**
+👉 **Security Groups** act as **virtual firewalls** at the instance level. They are **stateful** and allow traffic based on **allow rules only**.
 
 ---
 
-## 15. **What is Auto Scaling?**
-
-👉 **Auto Scaling** automatically increases or decreases EC2 instances based on demand, ensuring **high availability**, **scalability**, and **cost efficiency**.
-
----
-
-## 16. **What is Elastic Load Balancing (ELB)?**
-
-👉 **ELB** distributes incoming traffic across multiple EC2 instances and integrates with **Auto Scaling** for fault tolerance.
+## 8. **Explain the use of Network Access Control Lists (NACLs) and how they differ from security groups.**
+👉 **NACLs** operate at the **subnet level**, are **stateless**, and support **allow and deny rules**, unlike security groups.
 
 ---
 
-## 17. **Difference between ALB and NLB.**
-
-👉
-
-* **ALB (Application Load Balancer)**: Layer 7, HTTP/HTTPS, path-based routing
-* **NLB (Network Load Balancer)**: Layer 4, TCP traffic, ultra-low latency
+## 9. **How do you enable and configure AWS WAF in front of an EC2-based web application?**
+👉 Deploy **ALB or CloudFront** in front of EC2 and associate **AWS WAF** rules to block malicious traffic like **SQL injection or XSS**.
 
 ---
 
-## 18. **What happens if one EC2 instance fails behind ELB?**
-
-👉 ELB **health checks** detect the failure and automatically route traffic to **healthy instances only**.
-
----
-
-## 19. **What is a Placement Group?**
-
-👉 A **Placement Group** is a logical grouping of instances to optimize **network latency**, **throughput**, or **fault tolerance**.
+## 10. **What is Auto Scaling, and how can it ensure high availability?**
+👉 **Auto Scaling** automatically adjusts EC2 capacity based on demand, ensuring **availability, scalability, and cost optimization**.
 
 ---
 
-## 20. **Difference between Availability Zone and Placement Group.**
-
-👉 **AZ** is a physical data center location, while a **Placement Group** is a logical grouping of EC2 instances.
-
----
-
-## 21. **What is Amazon EBS?**
-
-👉 **Elastic Block Store (EBS)** is block-level storage attached to EC2 instances, mainly used for **OS, applications, and databases**.
+## 11. **Explain the purpose of Amazon Elastic Load Balancing (ELB).**
+👉 **ELB** distributes incoming traffic across multiple EC2 instances and performs **health checks** to route traffic only to healthy instances.
 
 ---
 
-## 22. **Difference between EBS and S3.**
-
-👉
-
-* **EBS**: Block storage, attached to one EC2 instance
-* **S3**: Object storage, highly scalable and durable
+## 12. **What is Amazon EC2 Container Service (ECS)?**
+👉 **ECS** is a container orchestration service that allows running **Docker containers** on EC2 or Fargate without managing control planes.
 
 ---
 
-## 23. **Types of EBS volumes and use cases.**
-
-👉
-
-* **gp3 / gp2**: General workloads
-* **io1 / io2**: High IOPS databases
-* **st1**: Throughput-intensive workloads
-* **sc1**: Cold data storage
+## 13. **How can you configure Amazon Route 53 for DNS-based load balancing?**
+👉 Use **routing policies** like **weighted, latency-based, or failover routing** to distribute traffic across EC2 instances.
 
 ---
 
-## 24. **What is Provisioned IOPS (PIOPS)?**
-
-👉 **PIOPS** provides consistent high performance for **I/O intensive workloads** like databases.
-
----
-
-## 25. **How to resize an EBS volume?**
-
-👉 Modify volume size → Extend partition → Resize filesystem. Always take a **snapshot** before resizing.
+## 14. **What is status check in an EC2 instance?**
+👉 **Status checks** monitor **system health (AWS hardware)** and **instance health (OS issues)** to detect failures.
 
 ---
 
-## 26. **What is an EBS snapshot?**
-
-👉 An **EBS snapshot** is a point-in-time backup stored in S3, used for **backup and disaster recovery**.
-
----
-
-## 27. **Best practices for encrypting EBS volumes.**
-
-👉 Enable encryption by default, use **AWS KMS keys**, and enforce encryption using **IAM policies**.
+## 15. **How to change instance types without downtime?**
+👉 Use **Auto Scaling Group**, **Load Balancer**, or **blue-green deployment** to replace instances with new types seamlessly.
 
 ---
 
-## 28. **Difference between EBS-backed and Instance-store-backed EC2.**
-
-👉
-
-* **EBS-backed**: Persistent storage
-* **Instance-store**: Temporary storage, data lost on stop
+## 16. **What is the difference between AMI and Snapshot?**
+👉  
+- **AMI** → Used to launch EC2 instances  
+- **Snapshot** → Backup of EBS volumes  
 
 ---
 
-## 29. **How to monitor EC2 and EBS performance?**
-
-👉 Use **Amazon CloudWatch** for metrics, alarms, logs, and monitoring.
-
----
-
-## 30. **What is IAM?**
-
-👉 **Identity and Access Management (IAM)** controls access to AWS resources using **users, roles, groups, and policies**.
+## 17. **How to troubleshoot boot issues like kernel panic in EC2?**
+👉 Stop instance → Detach root volume → Attach to another EC2 → Fix kernel/filesystem → Reattach and start.
 
 ---
 
-## 31. **Difference between IAM User and Role.**
-
-👉
-
-* **User**: Permanent identity
-* **Role**: Temporary permissions (recommended for EC2)
+## 18. **How many maximum IPs can be attached to an EC2 instance?**
+👉 Depends on **instance type**. Each instance has limits for **ENIs and private IPs** as defined by AWS.
 
 ---
 
-## 32. **Best practice for EC2 accessing S3.**
-
-👉 Attach an **IAM Role** to EC2 instead of using access keys.
-
----
-
-## 33. **What is VPC peering?**
-
-👉 **VPC Peering** enables private communication between two VPCs using AWS backbone network.
+## 19. **Describe different EC2 purchasing options.**
+👉  
+- **On-Demand** → Pay per use  
+- **Reserved Instances** → Long-term discount  
+- **Savings Plans** → Flexible commitment  
+- **Spot Instances** → Cheapest, interruptible  
+- **Dedicated Hosts** → Physical server control  
 
 ---
 
-## 34. **How can EC2 access the internet from a private subnet?**
-
-👉 Using a **NAT Gateway** with proper **route table** configuration.
-
----
-
-## 35. **What is Amazon EFS?**
-
-👉 **Elastic File System (EFS)** provides shared file storage that can be mounted on multiple EC2 instances.
+## 20. **What are the types of AWS Placement Groups?**
+👉  
+- **Cluster** → Low latency, high throughput  
+- **Spread** → Fault tolerance  
+- **Partition** → Large distributed systems  
 
 ---
 
-## 36. **Difference between EBS and EFS.**
-
-👉 **EBS** is single-instance block storage, while **EFS** is shared file storage.
-
----
-
-## 37. **How to automate EBS backups?**
-
-👉 Use **AWS Backup** or **EventBridge + Lambda** for scheduled snapshots.
+## 21. **Can you change the placement group of a running instance?**
+👉 **No**, you must **stop the instance** to change its placement group.
 
 ---
 
-## 38. **What is Route 53?**
-
-👉 **Amazon Route 53** is a DNS service used for domain routing and health checks.
-
----
-
-## 39. **Difference between A, CNAME, and Alias records.**
-
-👉
-
-* **A**: Domain to IP
-* **CNAME**: Domain to domain
-* **Alias**: AWS resource mapping
+## 22. **Difference between Availability Zone and Placement Group.**
+👉 **AZ** is a physical data center, while **Placement Group** is a logical grouping within AZs.
 
 ---
 
-## 40. **What is CloudFront?**
-
-👉 **Amazon CloudFront** is a CDN that caches content globally to reduce latency.
-
----
-
-## 41. **How does DNS resolution work?**
-
-👉 Browser → Resolver → Root → TLD → Authoritative DNS → IP returned.
+## 23. **Best practices for Placement Groups.**
+👉 Use same **instance types**, same **AZ**, and ensure **capacity availability** before launch.
 
 ---
 
-## 42. **What is AWS Lambda?**
-
-👉 **AWS Lambda** is a serverless compute service where you run code without managing servers.
-
----
-
-## 43. **Difference between Lambda and EC2.**
-
-👉 **Lambda** is serverless and auto-scales, while **EC2** requires server management.
+## 24. **Limitations of Placement Groups.**
+👉 Cannot span regions, capacity not guaranteed, and limited flexibility.
 
 ---
 
-## 44. **How to trigger Lambda automatically?**
-
-👉 Using **S3 events, EventBridge schedules, API Gateway, or CloudWatch alarms**.
-
----
-
-## 45. **What is Amazon CloudWatch?**
-
-👉 **CloudWatch** monitors AWS resources using metrics, logs, and alarms.
+## 25. **EBS volume types and best use cases.**
+👉  
+- **gp3 / gp2** → General workloads  
+- **io1 / io2** → High IOPS databases  
+- **st1** → Big data, logs  
+- **sc1** → Cold storage  
 
 ---
 
-## 46. **What are custom CloudWatch metrics?**
-
-👉 Application-specific metrics pushed using **CLI, SDK, or CloudWatch Agent**.
-
----
-
-## 47. **How to centralize logs from EC2?**
-
-👉 Install **CloudWatch Agent** and send logs to **CloudWatch Logs**.
+## 26. **What is Amazon EBS and how does it differ from S3?**
+👉 **EBS** is block storage for EC2, while **S3** is object storage designed for unlimited scalability.
 
 ---
 
-## 48. **What is Amazon RDS?**
-
-👉 **Relational Database Service (RDS)** is a managed database service supporting MySQL, PostgreSQL, and more.
-
----
-
-## 49. **How to enable high availability in RDS?**
-
-👉 Enable **Multi-AZ deployment** with automatic failover.
+## 27. **Explain Provisioned IOPS (PIOPS).**
+👉 **PIOPS** ensures consistent, high-performance I/O for **critical databases**.
 
 ---
 
-## 50. **Design a highly available and scalable web application.**
+## 28. **How do you resize an EBS volume safely?**
+👉 Modify volume → Extend partition → Resize filesystem → Always take **snapshot backup first**.
 
-👉 Use **Multi-AZ EC2**, **ALB**, **Auto Scaling**, **CloudFront**, **Route 53**, **S3**, and **RDS Multi-AZ**.
+---
+
+## 29. **Difference between EBS volume type and size.**
+👉 **Volume type** affects performance, while **size** affects capacity and throughput limits.
+
+---
+
+## 30. **What is an EBS snapshot and why is it important?**
+👉 Snapshot is a **point-in-time backup** used for **disaster recovery and data durability**.
+
+---
+
+## 31. **How often should EBS snapshots be created?**
+👉 Based on data criticality. Use **AWS Backup**, **lifecycle policies**, and **retention rules**.
+
+---
+
+## 32. **Best practices for encrypting EBS volumes.**
+👉 Enable **encryption by default**, use **AWS KMS**, and enforce encryption using **IAM policies**.
+
+---
+
+## 33. **Difference between EBS-backed and instance-store-backed EC2.**
+👉  
+- **EBS-backed** → Persistent storage  
+- **Instance-store** → Temporary storage  
+
+---
+
+## 34. **How can you monitor EBS performance and health?**
+👉 Use **Amazon CloudWatch**, **CloudWatch Agent**, and **AWS Trusted Advisor**.
+
+---
+
+# ✅ **Additional Important EC2 Questions (Added)**
+
+---
+
+## 35. **What is an Elastic Network Interface (ENI)?**
+👉 **ENI** is a virtual network card that allows multiple IPs and network interfaces per EC2.
+
+---
+
+## 36. **What is EC2 Hibernate?**
+👉 **Hibernate** saves instance memory to disk and resumes quickly without losing application state.
+
+---
+
+## 37. **Difference between Stop and Terminate EC2 instance.**
+👉 **Stop** preserves data, **Terminate** deletes the instance permanently.
+
+---
+
+## 38. **What is a key pair in EC2?**
+👉 Used for **secure SSH access** to Linux EC2 instances.
+
+---
+
+## 39. **What is EC2 Spot Fleet?**
+👉 A group of **Spot Instances** launched together to reduce costs.
+
+---
+
+## 40. **How do you secure EC2 instances?**
+👉 Use **IAM roles**, **security groups**, **patching**, **encryption**, and **monitoring**.
 
 ---
