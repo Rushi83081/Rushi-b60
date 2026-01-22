@@ -1,5 +1,5 @@
 ## AWS – **Top 50 Important Questions & Answers**
--
+
 
 ## 1. **What is virtualization and why is it important in cloud computing?**
 
@@ -332,5 +332,3 @@
 👉 Use **Multi-AZ EC2**, **ALB**, **Auto Scaling**, **CloudFront**, **Route 53**, **S3**, and **RDS Multi-AZ**.
 
 ---
-
-✅ **Formatted perfectly for GitHub README and AWS interviews**
