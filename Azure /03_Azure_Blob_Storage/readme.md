@@ -11,6 +11,6 @@ Storage Account → Container → Files
 
 ## Blob Storage Features
 
-- Maximum storage capacity: **5 PB**
+- Maximum storage capacity: **5 PB** (Petabytes)
 - Used for non-bootable storage
 - Used as a service, not as a device
