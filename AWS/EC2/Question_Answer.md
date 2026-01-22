@@ -1,8 +1,5 @@
-# AWS – **Top 50 Important Interview Questions & Answers**
-
-This **README.md** contains **50 most important AWS interview questions**, formatted clearly for **GitHub, exams, and interviews**.
-
----
+## AWS – **Top 50 Important Questions & Answers**
+-
 
 ## 1. **What is virtualization and why is it important in cloud computing?**
 
