@@ -41,7 +41,7 @@ Azure provides different access tiers based on how frequently data is accessed.
 - **Most cost-effective** storage option
 - Data access takes **hours**
 
-# ---
+---
 
 ## 📌 Azure Storage Redundancy
 
