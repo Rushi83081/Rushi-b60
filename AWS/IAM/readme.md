@@ -1,137 +1,138 @@
 # 🔐 AWS IAM (Identity and Access Management)
 
-- **AWS IAM** is a global service that allows you to manage users, permissions, and access to AWS services securely.
+**AWS Identity and Access Management (IAM)** is a **global AWS service** that helps you securely control access to AWS resources.
 
-👉 IAM answers WHO can access WHAT and HOW in AWS.
+> 👉 IAM answers three key questions in AWS:  
+> **WHO** can access **WHAT** and **HOW**
+
+---
 
 ## 📌 Why IAM is Needed?
 
-* Secure AWS resources
+IAM is essential for managing security and access in AWS.
 
-* Control access using permissions
+✅ Secure AWS resources  
+✅ Control access using permissions  
+✅ Follow the **Principle of Least Privilege**  
+✅ Avoid sharing the **root account**  
+✅ Manage users and services safely  
 
-* Follow least privilege principle
-
-* Avoid sharing root account
-
-___
+---
 
 ## 🧱 IAM Core Components
 
 ### 1️⃣ IAM Users
+- Represents a **person or application**
+- Has **username & password** or **access keys**
+- Used for **long-term access**
 
-* Represents a person or application
-
-* Has username + password / access keys
-
-* Used for long-term access
 ---
+
 ### 2️⃣ IAM Groups
+- Collection of **IAM users**
+- Permissions are assigned to the **group**
+- Users **inherit permissions** from the group
 
-* Collection of IAM users
-
-* Permissions are assigned to group
-
-* Users inherit group permissions
 ---
+
 ### 3️⃣ IAM Roles
+- Used to grant **temporary permissions**
+- **No username or password**
+- Commonly used with:
+  - EC2
+  - Lambda
+  - EKS
+  - Cross-account access
 
-* Used to grant temporary permissions
-
-* No username or password
-
-* Commonly used with EC2, Lambda, EKS
 ---
+
 ### 4️⃣ IAM Policies
+- JSON document that defines **permissions**
+- Attached to **users, groups, or roles**
+- Controls **Allow** or **Deny** actions
 
-* JSON document that defines permissions
-
-* Attached to users, groups, or roles
-
-* Controls Allow / Deny actions
-
-____
+---
 
 ## 📄 AWS IAM Policy Types
 
-- AWS IAM policies define what actions are allowed or denied on AWS resources.
-- Policies are written in JSON and are attached to users, groups, or roles.
+IAM policies define what actions are **allowed or denied** on AWS resources.  
+They are written in **JSON format** and attached to IAM identities.
+
+---
 
 ## 🧱 Types of IAM Policies
 
-AWS IAM supports three main policy types:
+AWS IAM supports **three main policy types**:
 
 ### 1️⃣ Managed Policies
+Standalone policies that can be attached to multiple IAM identities.
 
-- Managed policies are standalone policies that can be attached to multiple IAM identities.
+#### 🔹 Characteristics
+- Created and managed separately  
+- Reusable across users, groups, and roles  
+- Easy to update and maintain  
 
-### 🔹 Characteristics
+#### 🔹 Types of Managed Policies
+- **AWS Managed Policies** – Created and maintained by AWS  
+- **Customer Managed Policies** – Created and managed by users  
 
-- * Created and managed separately
-
-- * Reusable across users, groups, and roles
-
-- * Easy to update and maintain
-
-### 🔹 Types of Managed Policies
-
-- * AWS Managed Policies – Created by AWS
-
-- * Customer Managed Policies – Created by users
 ---
+
 ### 2️⃣ Inline Policies
+Policies directly embedded into a **single user, group, or role**.
 
-Inline policies are directly embedded into a single user, group, or role.
+#### 🔹 Characteristics
+- Tightly coupled to one identity  
+- ❌ Not reusable  
+- Deleted automatically when the identity is deleted  
 
-### 🔹 Characteristics
-
-- * Tightly coupled to one identity
-
-- * Cannot be reused
-
-- * Deleted automatically when identity is deleted
 ---
+
 ### 3️⃣ Permissions Boundary (Advanced)
+Permissions boundaries define the **maximum permissions** an IAM entity can have.
 
-Permissions boundaries set the maximum permissions an IAM entity can have.
-
-### 🔹 Characteristics
-
-- * Acts as a permission limit
-
-- * Used with users or roles
-
-- * Common in large organizations
+#### 🔹 Characteristics
+- Acts as a **permission limit**
+- Used with **users or roles**
+- Commonly used in **large organizations**
 
 ---
 
-# Differences
+## 🔁 Differences
 
-## 🔁 IAM USERS vs GROUPS vs ROLES
+### 🔐 IAM Users vs Groups vs Roles
 
 | Feature           | IAM User          | IAM Group           | IAM Role                    |
-| ----------------- | ----------------- | ------------------- | --------------------------- |
-| Represents        | Person / App      | Collection of users | AWS service / external user |
-| Login Credentials | ✅ Yes             | ❌ No                | ❌ No                        |
-| Permissions       | Directly attached | Attached to group   | Attached to role            |
-| Access Type       | Long-term         | Long-term           | Temporary                   |
-| Common Use        | Admin, Developer  | Team management     | EC2, Lambda, Cross-account  |
+|-------------------|------------------|---------------------|-----------------------------|
+| Represents        | Person / App     | Collection of users | AWS service / external user |
+| Login Credentials | ✅ Yes            | ❌ No                | ❌ No                        |
+| Permissions       | Directly attached| Attached to group   | Attached to role            |
+| Access Type       | Long-term        | Long-term           | Temporary                   |
+| Common Use        | Admin, Developer | Team management     | EC2, Lambda, Cross-account  |
 
-## 🔁 IAM POLICIES vs ROLES
+---
+
+### 📜 IAM Policies vs Roles
 
 | Feature     | IAM Policy                  | IAM Role                    |
-| ----------- | --------------------------- | --------------------------- |
-| What it is  | Permission document         | Identity with permissions   |
-| Purpose     | Defines **what is allowed** | Grants **temporary access** |
-| Used By     | Users, Groups, Roles        | AWS services / users        |
-| Credentials | ❌ No                        | ❌ No                        |
-| Example     | Allow S3 access             | EC2 accessing S3            |
+|------------|-----------------------------|-----------------------------|
+| What it is | Permission document         | Identity with permissions   |
+| Purpose    | Defines **what is allowed** | Grants **temporary access** |
+| Used By    | Users, Groups, Roles        | AWS services / users        |
+| Credentials| ❌ No                        | ❌ No                        |
+| Example    | Allow S3 access             | EC2 accessing S3            |
 
-## 🔁 INLINE POLICY vs MANAGED POLICY
+---
+
+### 🆚 Inline Policy vs Managed Policy
 
 | Feature         | Inline Policy    | Managed Policy       |
-| --------------- | ---------------- | -------------------- |
-| Attached To     | Single user/role | Multiple users/roles |
+|-----------------|------------------|----------------------|
+| Attached To     | Single identity  | Multiple identities  |
 | Reusability     | ❌ No             | ✅ Yes                |
 | AWS Recommended | ❌ No             | ✅ Yes                |
 | Management      | Harder           | Easier               |
+
+---
+
+✨ **Tip:** Always use **IAM roles** for AWS services and follow the **least privilege principle** for better security.
