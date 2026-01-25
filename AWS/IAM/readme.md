@@ -2,8 +2,8 @@
 
 **AWS Identity and Access Management (IAM)** is a **global AWS service** that helps you securely control access to AWS resources.
 
-> 👉 IAM answers three key questions in AWS:  
-> **WHO** can access **WHAT** and **HOW**
+ 👉 IAM answers three key questions in AWS:  
+ **WHO** can access **WHAT** and **HOW**
 
 ---
 
