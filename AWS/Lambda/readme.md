@@ -1,39 +1,59 @@
-# 📘 AWS Lambda Practical
+# 📘 AWS Lambda Practical – Start & Stop EC2 Instance
 
-## 🟢 Step 1: Create IAM Role
+This practical demonstrates how to use **AWS Lambda** with an **IAM Role** to **start and stop an EC2 instance** using **Python (boto3)**.  
+No access keys are used — permissions are handled securely using IAM roles.
 
-**🔐 IAM → Roles → Create role**
+---
 
-**✔ Service: Lambda**
+## 🟢 Step 1: Create IAM Role for Lambda
 
-**✔ Policy:** 
+Open AWS Console and navigate to:
 
-* AmazonEC2FullAccess
+IAM → Roles → Create role
 
-* AWSLambdaBasicExecutionRole
- 
-* AmazonLambda_FullAccess
+### Role Configuration
+- Trusted entity type: **AWS service**
+- Use case: **Lambda**
 
-✔ Role name: Lambda-EC2-Role
+### Attach the following policies
+- AmazonEC2FullAccess  
+- AWSLambdaBasicExecutionRole  
+- AmazonLambda_FullAccess  
 
+### Role Name
+
+Lambda-EC2-Role
+
+
+Click **Create role**
+
+---
 
 ## 🟢 Step 2: Create Lambda Function
 
-☁️ Lambda → Create function
+Navigate to:
 
-* ✔ Name: EC2-Start-Stop
+AWS Lambda → Create function
 
-* ✔ Runtime: Python 3.9
+### Function Details
+- Function name: **EC2-Start-Stop**
+- Runtime: **Python 3.9**
+- Execution role: **Use an existing role**
+- Existing role: **Lambda-EC2-Role**
 
-* ✔ Role: Lambda-EC2-Role
+Click **Create function**
 
+---
 
 ## 🟢 Step 3: Add EC2 START Code
 
-💻 Lambda → Code tab
+Go to:
 
-📌 Paste EC2 start code
-```
+Lambda → Function → Code tab
+
+Paste the following code to **start the EC2 instance**:
+
+```python
 import boto3
 
 # Initialize the EC2 client
@@ -43,31 +63,34 @@ def lambda_handler(event, context):
     # Hardcoded EC2 instance ID
     instance_id = 'i-0a30a69aab79a1275'
     
-    # Start the EC2 instance
     try:
-        response = ec2.start_instances(InstanceIds=[instance_id])
-        print(f'Starting instance {instance_id}')
-        return f'Instance {instance_id} is starting'
+        ec2.start_instances(InstanceIds=[instance_id])
+        print(f"Starting instance {instance_id}")
+        return f"Instance {instance_id} is starting"
     
     except Exception as e:
-        print(f'Error starting instance {instance_id}: {str(e)}')
-        return f'Error: {str(e)}'
+        print(f"Error starting instance: {str(e)}")
+        return f"Error: {str(e)}"
 ```
 
-✔ Click Deploy
+### Click Deploy
 
-**🧪 Test event:**
+## Test the Function
+
+### Create a test event with the following input:
 ```
-{ 
-"action": "start"
+{
+  "action": "start"
 }
 ```
-▶️ Result: EC2 STARTS
+
+▶️ Result: EC2 instance starts successfully
+
+---
 
 ## 🟢 Step 4: Add EC2 STOP Code
 
-💻 Replace code with EC2 stop code
-
+### Replace the existing code with the EC2 stop code below:
 ```
 import boto3
 
@@ -78,34 +101,37 @@ def lambda_handler(event, context):
     # Hardcoded EC2 instance ID
     instance_id = 'i-0a30a69aab79a1275'
     
-    # Stop the EC2 instance
     try:
-        response = ec2.stop_instances(InstanceIds=[instance_id])
-        print(f'Stopping instance {instance_id}')
-        return f'Instance {instance_id} is stopping'
+        ec2.stop_instances(InstanceIds=[instance_id])
+        print(f"Stopping instance {instance_id}")
+        return f"Instance {instance_id} is stopping"
     
     except Exception as e:
-        print(f'Error stopping instance {instance_id}: {str(e)}')
-        return f'Error: {str(e)}'
-
+        print(f"Error stopping instance: {str(e)}")
+        return f"Error: {str(e)}"
 ```
+### Click Deploy
 
-✔ Click Deploy
+## Test the Function
 
-**🧪 Test event:**
+### Use the following test event:
 ```
-{ 
-"action": "stop" 
+{
+  "action": "stop"
 }
 ```
-⏹ Result: EC2 STOPS
 
-## 🟢 Step 5: Verify
+⏹ Result: EC2 instance stops successfully
 
-🖥️ EC2 Console
+---
+## 🟢 Step 5: Verify EC2 Instance Status
 
-✔ Instance state changes:
+### Navigate to:
 
-* ▶️ Running
+EC2 Console → Instances
 
-* ⏹ Stopped
+Verify the instance state:
+
+- ▶️ Running (after start)
+
+- ⏹ Stopped (after stop)
