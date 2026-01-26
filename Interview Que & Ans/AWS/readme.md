@@ -1,5 +1,3 @@
----
-
 ## 1️⃣ What is Cloud Computing?
 
 **Answer:**
