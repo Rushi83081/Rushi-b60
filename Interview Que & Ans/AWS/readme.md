@@ -1,7 +1,3 @@
-# ☁️ Cloud Computing & AWS – Interview / Exam Notes
-
-This document contains **important Cloud Computing and AWS fundamentals** explained in **simple and clear language** for **exams, interviews, and revision**.
-
 ---
 
 ## 1️⃣ What is Cloud Computing?
