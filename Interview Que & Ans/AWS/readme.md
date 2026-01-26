@@ -1,7 +1,5 @@
 ## 1️⃣ What is Cloud Computing?
 
-**Answer:**
-
 Cloud computing delivers **on-demand computing resources** such as servers, storage, databases, networking, and applications over the internet.
 
 ### Key Benefits:
