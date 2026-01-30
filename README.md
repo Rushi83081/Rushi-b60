@@ -21,7 +21,23 @@ Overall my experience includes **cloud infrastructure automation**, **continuous
 
 Thank you
 
----------------------------------------------------------------------------------------------------------------------
+---
+
+# Bank Management System – DevOps Internship Project
+
+During my six-month internship, I worked on a Bank Management System project. The system was designed for internal and academic use and handled banking operations such as customer account management, user access control, and simple transaction processing. The project was done by a team of 10 members: 2 frontend developers, 4 backend developers, 2 database engineers, and 2 DevOps engineers.
+
+The application was developed using a microservices architecture, where each service works independently and can be deployed separately. The backend services were developed using Java and Spring Boot, the frontend was built using React, and MySQL was used as the database. This architecture helped improve scalability, flexibility, and ease of maintenance.
+
+In this project, I worked as a DevOps Engineer. My responsibilities included automating the build and deployment process, managing infrastructure, and ensuring smooth delivery of the application across different environments. I mainly focused on DevOps tasks rather than application development.
+
+I implemented a CI/CD pipeline using Jenkins. Whenever developers pushed code to GitHub, the pipeline automatically triggered the build process, performed basic checks, created Docker images, and deployed the application to a Kubernetes cluster. This automation reduced manual effort and improved deployment speed.
+
+Docker was used to containerize the application so that it runs consistently across development and testing environments. These containers were deployed and managed using Kubernetes, which helped with container orchestration, load balancing, scaling, and application availability.
+
+I also worked on basic monitoring to track application health and system resource usage such as CPU and memory. This helped in identifying issues early and maintaining application stability. Overall, this internship project provided me with hands-on experience in DevOps tools and helped me understand how automation improves reliability and efficiency in real-world applications.
+
+---
 
 # 🌟 Medium Version (Best)
 
