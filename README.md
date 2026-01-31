@@ -61,7 +61,7 @@ I also monitored the application to check system health and resource usage. This
 
 Good morning, and thank you for the opportunity.
 
-My name is Rushikesh Gaikwad, and I have completed my Bachelor of Computer Applications (BCA) from Bharati Vidyapeeth IMRDA, Sangli. Currently, I am working as a DevOps Engineer Intern at Hisan Labs Pvt Ltd, Pune. Before starting my internship, I completed a four-month DevOps course at CloudBlitz, Pune. 
+My name is Rushikesh Gaikwad, and I have completed my **BCA** from **Bharati Vidyapeeth IMRDA, Sangli**. Currently, I am working as a DevOps Engineer Intern at Hisan Labs Pvt Ltd, Pune. Before starting my internship, I completed a four-month DevOps course at CloudBlitz, Pune. 
 
 I regularly work with Linux-based systems, where I handle tasks such as file and directory management, user and group management, permissions, process monitoring, log analysis, and basic shell scripting for automation and troubleshooting. 
 
