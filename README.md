@@ -23,7 +23,7 @@ Thank you
 
 ---
 
-# Bank Management System – DevOps Internship Project
+# Bank Management System – DevOps Project (Explanation)
 
 During my six-month internship, I worked on a Bank Management System project. The system was designed for internal and academic use and handled banking operations such as customer account management, user access control, and simple transaction processing. The project was done by a team of 10 members: 2 frontend developers, 4 backend developers, 2 database engineers, and 2 DevOps engineers.
 
@@ -39,7 +39,7 @@ I also worked on basic monitoring to track application health and system resourc
 
 ---
 
-Medical Management System – Internship Project
+# Medical Management System – Project (Explanation)
 
 During my internship, I worked on a Medical Management System project. This system was used to manage patient information, doctor access, appointments, and basic medical records. The project was completed by a team of 10 members, including frontend, backend, database, and DevOps engineers.
 
