@@ -39,6 +39,22 @@ I also worked on basic monitoring to track application health and system resourc
 
 ---
 
+Medical Management System – Internship Project
+
+During my internship, I worked on a Medical Management System project. This system was used to manage patient information, doctor access, appointments, and basic medical records. The project was completed by a team of 10 members, including frontend, backend, database, and DevOps engineers.
+
+The application was built using separate modules so that each part works independently. The frontend was developed using React, the backend was built with Spring Boot, and MySQL was used to store the data. This made the system easier to manage and update.
+
+I worked as a DevOps Engineer in this project. My main role was to support the development team by automating deployment and managing application environments.
+
+I created a CI/CD pipeline using Jenkins. When developers pushed code to GitHub, the pipeline automatically built the application, created Docker images, and deployed them to the server. This helped reduce manual work and made deployments faster.
+
+Docker was used to package the application so it works the same on all systems. Kubernetes was used to manage and run these containers, which helped with scaling and availability.
+
+I also monitored the application to check system health and resource usage. This internship project helped me understand how DevOps tools are used in real projects and improved my practical skills.
+
+---
+
 # 🌟 Medium Version (Best)
 
 Hello, my name is Rushikesh Gaikwad, and I have completed my **BCA** from Bharati Vidyapeeth, Sangli. I am currently pursuing a **DevOps** course at CloudBlitz, Pune, where I worked on projects such as **3-Tier Architecture Deployment**, **Netflix Clone**, **Myntra Clone**, **Amazon Clone**, **Super Mario Deployment**, and deploying an **Angular application on Kubernetes**.
