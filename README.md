@@ -55,6 +55,36 @@ I also monitored the application to check system health and resource usage. This
 
 ---
 
+# DevOps Internship Project & Professional Overview
+
+## Introduction + Explanation 
+
+Good morning, and thank you for the opportunity.
+
+My name is Rushikesh Gaikwad, and I have completed my Bachelor of Computer Applications (BCA) from Bharati Vidyapeeth IMRDA, Sangli. Currently, I am working as a DevOps Engineer Intern at Hisan Labs Pvt Ltd, Pune. Before starting my internship, I completed a four-month DevOps course at CloudBlitz, Pune. 
+
+I regularly work with Linux-based systems, where I handle tasks such as file and directory management, user and group management, permissions, process monitoring, log analysis, and basic shell scripting for automation and troubleshooting. 
+
+From a cloud perspective, I have hands-on experience with AWS services including EC2, VPC, IAM, S3, EBS, EFS, RDS, Route 53, CloudFront, and EKS. My focus is on building secure, scalable, and highly available cloud infrastructure that supports application performance and reliability.
+
+I use Git to track code and Jenkins to automatically build and deploy the application. I work with Docker to build and manage container images and deploy applications consistently across environments. I also manage containerized applications using Kubernetes, where I handle deployments, rolling updates, autoscaling, health checks, and basic cluster troubleshooting. I follow deployment strategies such as rolling deployments and blue-green deployments to achieve minimal downtime and support quick rollback when required.
+
+For monitoring and observability, I track system health, application performance, logs, and alerts using tools such as Grafana and Datadog. This helps in proactive issue detection and faster incident resolution.
+
+**During my six-month internship**, I worked on a Bank Management System project. The system was developed for organizational and training use and focused on basic banking features such as customer account management, user access control, and simple transaction handling. The project was completed by a team of 10 members, including frontend developers, backend developers, database engineers, and DevOps engineers.
+
+The application was designed using a microservices architecture, where each service works independently and can be deployed separately. The backend services were developed using Java and Spring Boot, the frontend was built using React, and MySQL was used as the database. This architecture improved scalability, flexibility, and ease of maintenance.
+
+In this project, I worked as a DevOps Engineer and was responsible for automating the build and deployment process, managing infrastructure, and ensuring smooth application delivery across different environments. I mainly focused on DevOps-related tasks rather than application development.
+
+I implemented a CI/CD pipeline using Jenkins, where code changes pushed to GitHub automatically triggered the build process, created Docker images, and deployed the application to a Kubernetes cluster. Docker was used to containerize the application to ensure consistency across environments, and Kubernetes was used to manage containers, scaling, and application availability.
+
+I also worked on basic monitoring to track application health and system resource usage such as CPU and memory. Overall, this internship project provided me with practical exposure to DevOps tools and helped me understand how automation improves reliability and efficiency in real-world applications.
+
+Thank you.
+
+---
+
 # 🌟 Medium Version (Best)
 
 Hello, my name is Rushikesh Gaikwad, and I have completed my **BCA** from Bharati Vidyapeeth, Sangli. I am currently pursuing a **DevOps** course at CloudBlitz, Pune, where I worked on projects such as **3-Tier Architecture Deployment**, **Netflix Clone**, **Myntra Clone**, **Amazon Clone**, **Super Mario Deployment**, and deploying an **Angular application on Kubernetes**.
