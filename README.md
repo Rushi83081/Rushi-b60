@@ -69,8 +69,6 @@ From a cloud perspective, I have hands-on experience with AWS services including
 
 In ***DevOps***, I worked with **Git** for version control and code collaboration, and used **Docker** to create and run applications in containers. I deployed and managed containers using **Kubernetes**, which helped me to understand how applications are scaled, managed, and kept running smoothly. I also automated cloud infrastructure using **Terraform** and built CI/CD pipelines in **Jenkins** to automate the build and deployment process. For monitoring, I used **Datadog** and **Grafana** to track application performance, logs, and system health.
 
-For monitoring and observability, I track system health, application performance, logs, and alerts using tools such as Grafana and Datadog. This helps in proactive issue detection and faster incident resolution.
-
 **During my six-month internship**, I worked on a Bank Management System project. The system was developed for organizational and training use and focused on basic banking features such as customer account management, user access control, and simple transaction handling. The project was completed by a team of 10 members, including frontend developers, backend developers, database engineers, and DevOps engineers.
 
 The application was designed using a microservices architecture, where each service works independently and can be deployed separately. The backend services were developed using Java and Spring Boot, the frontend was built using React, and MySQL was used as the database. This architecture improved scalability, flexibility, and ease of maintenance.
