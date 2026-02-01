@@ -67,7 +67,7 @@ I regularly work with Linux-based systems, where I handle tasks such as file and
 
 From a cloud perspective, I have hands-on experience with AWS services including EC2, VPC, IAM, S3, EBS, EFS, RDS, Route 53, CloudFront, and EKS. My focus is on building secure, scalable, and highly available cloud infrastructure that supports application performance and reliability.
 
-I use Git to track code and Jenkins to automatically build and deploy the application. I work with Docker to build and manage container images and deploy applications consistently across environments. I also manage containerized applications using Kubernetes, where I handle deployments, rolling updates, autoscaling, health checks, and basic cluster troubleshooting. I follow deployment strategies such as rolling deployments and blue-green deployments to achieve minimal downtime and support quick rollback when required.
+In ***DevOps***, I worked with **Git** for version control and code collaboration, and used **Docker** to create and run applications in containers. I deployed and managed containers using **Kubernetes**, which helped me to understand how applications are scaled, managed, and kept running smoothly. I also automated cloud infrastructure using **Terraform** and built CI/CD pipelines in **Jenkins** to automate the build and deployment process. For monitoring, I used **Datadog** and **Grafana** to track application performance, logs, and system health.
 
 For monitoring and observability, I track system health, application performance, logs, and alerts using tools such as Grafana and Datadog. This helps in proactive issue detection and faster incident resolution.
 
