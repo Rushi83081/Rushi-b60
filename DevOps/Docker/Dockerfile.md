@@ -26,7 +26,7 @@ FROM ubuntu:20.04
 
 📌 Defines metadata about the image creator.
 ```
-LABEL maintainer="abhipraydh96@gmail.com"
+LABEL maintainer="gaikwadrushi2005@gmail.com"
 ```
 ---
 
