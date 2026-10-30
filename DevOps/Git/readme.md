@@ -92,5 +92,3 @@ git pull origin main
 ```bash
 git log --oneline
 ``` 
-
--Rushi
